@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="MatrizCurricular" table="MatrizCurricular">
+
+    <id name="MatrizCurricularUID">
+      <column name="matrizCurricularUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Curso" lazy="false">
+      <column name="cursoUID" sql-type="bigint" not-null="false"/>
+    </many-to-one>
+
+    <property name="PeriodoInicialFuncionamento">
+      <column name="periodoInicialFuncionamento" sql-type="int" not-null="false"/>
+    </property>
+
+    <property name="PeriodoFinalFuncionamento">
+      <column name="periodoFinalFuncionamento" sql-type="int" not-null="false"/>
+    </property>
+
+    <property name="SituacaoCursoUID">
+      <column name="situacaoCursoUID" sql-type="int" not-null="true"/>
+    </property>
+
+    <property name="TurnoCursoUID">
+      <column name="turnoCursoUID" sql-type="int" not-null="true"/>
+    </property>
+
+    <property name="RegimeCursoUID">
+      <column name="regimeCursoUID" sql-type="int" not-null="false"/>
+    </property>
+
+    <property name="PeriodicidadeCursoUID">
+      <column name="periodicidadeCursoUID" sql-type="int" not-null="true"/>
+    </property>
+
+    <property name="ModalidadeCursoUID">
+      <column name="modalidadeCursoUID" sql-type="int" not-null="true"/>
+    </property>
+
+    <property name="FormatoCursoUID">
+      <column name="formatoCursoUID" sql-type="int" not-null="true"/>
+    </property>
+
+    <property name="Descricao">
+      <column name="descricao" sql-type="varchar" not-null="true"/>
+    </property>
+
+    <property name="NumeroDeSemanas">
+      <column name="numeroDeSemanas" sql-type="int" not-null="false"/>
+    </property>
+
+  </class>
+
+</hibernate-mapping>

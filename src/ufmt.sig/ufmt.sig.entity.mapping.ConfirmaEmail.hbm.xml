@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="ConfirmaEmail" table="ConfirmaEmail">
+
+    <id name="ConfirmaEmailUID">
+      <column name="confirmaEmailUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Pessoa" lazy="false">
+      <column name="pessoaUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <property name="NovoEmail">
+      <column name="novoEmail" sql-type="varchar(128)" not-null="true"/>
+    </property>
+
+    <property name="CodigoConfirmacao">
+      <column name="codigoConfirmacao" sql-type="varchar(32)" not-null="true"/>
+    </property>
+    
+  </class>
+
+</hibernate-mapping>

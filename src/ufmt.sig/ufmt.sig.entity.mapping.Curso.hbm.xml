@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="Curso" table="Curso">
+
+    <id name="CursoUID">
+      <column name="cursoUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <property name="CodigoExterno">
+      <column name="codigoExterno" sql-type="bigint" not-null="false"/>
+    </property>
+
+    <property name="Nome">
+      <column name="nome" sql-type="varchar(255)" not-null="true"/>
+    </property>
+
+    <property name="DataFundacao">
+      <column name="dataFundacao" sql-type="date" not-null="false"/>
+    </property>
+
+    <property name="CodigoIntegracao">
+      <column name="codigoIntegracao" sql-type="varchar(30)" not-null="true"/>
+    </property>
+
+    <property name="TipoIntegracao">
+      <column name="tipoIntegracao" sql-type="char(1)" not-null="true"/>
+    </property>
+
+    <property name="NivelCursoUID">
+      <column name="nivelCursoUID" sql-type="int" not-null="true"/>
+    </property>
+
+    <property name="TipoCursoUID">
+      <column name="tipoCursoUID" sql-type="int" not-null="true"/>
+    </property>
+
+    <many-to-one name="CursoAssociado" lazy="false">
+      <column name="cursoAssociadoUID" sql-type="bigint" not-null="false"/>
+    </many-to-one>
+
+    <many-to-one name="InstituicaoConvenio" lazy="false">
+      <column name="instituicaoConvenioUID" sql-type="int" not-null="false"/>
+    </many-to-one>
+
+    <many-to-one name="Campus" lazy="false">
+      <column name="campusUID" sql-type="int" not-null="true"/>
+    </many-to-one>
+
+    <many-to-one name="UnidadeOfertante" lazy="false">
+      <column name="unidadeOfertanteUID" sql-type="bigint" not-null="false"/>
+    </many-to-one>
+
+  </class>
+
+</hibernate-mapping>

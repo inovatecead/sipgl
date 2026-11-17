@@ -1,0 +1,1 @@
+﻿ALTER TABLE Sipgl.ProjetoCurso ADD codigoEMEC VARCHAR(64);

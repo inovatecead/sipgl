@@ -1,0 +1,3 @@
+﻿--ALTER TABLE sipgl.PreMatriculaPessoa ADD 
+--chaveRecuperacaoSenha varchar(256),
+--dataValidadeChave Date;

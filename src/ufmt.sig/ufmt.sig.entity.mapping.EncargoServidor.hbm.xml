@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="EncargoServidor" table="EncargoServidor">
+
+    <id name="EncargoServidorUID">
+      <column name="encargoServidorUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Servidor" lazy="false">
+      <column name="servidorUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <property name="Ano">
+      <column name="ano" sql-type="int" not-null="true"/>
+    </property>
+
+    <property name="Periodo">
+      <column name="periodo" sql-type="int" not-null="true"/>
+    </property>
+
+    <many-to-one name="TipoEncargoServidor" lazy="false">
+      <column name="tipoEncargoServidorUID" sql-type="int" not-null="true"/>
+    </many-to-one>
+
+    <property name="Descricao">
+      <column name="descricao" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+    <property name="CargaHorariaSemanal">
+      <column name="cargaHorariaSemanal" sql-type="numeric(7,2)" not-null="true"/>
+    </property>
+
+    <property name="Complemento">
+      <column name="complemento" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+    <property name="Complemento2">
+      <column name="complemento2" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+  </class>
+
+</hibernate-mapping>

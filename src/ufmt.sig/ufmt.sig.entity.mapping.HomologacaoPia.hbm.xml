@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="HomologacaoPia" table="HomologacaoPia">
+
+    <id name="HomologacaoPiaUID">
+      <column name="homologacaoPiaUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <property name="Ano">
+      <column name="ano" sql-type="int" not-null="true"/>
+    </property>
+
+    <property name="Periodo">
+      <column name="periodo" sql-type="int" not-null="true"/>
+    </property>
+
+    <many-to-one name="ServidorDocente" lazy="false">
+      <column name="servidorDocenteUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <many-to-one name="ServidorAprovador" lazy="false">
+      <column name="servidorAprovadorUID" sql-type="bigint" not-null="false"/>
+    </many-to-one>
+    
+    <many-to-one name="ServidorHomologador" lazy="false">
+      <column name="servidorHomologadorUID" sql-type="bigint" not-null="false"/>
+    </many-to-one>
+
+    <property name="AvaliacaoAprovador">
+      <column name="avaliacaoAprovador" sql-type="bit" not-null="true"/>
+    </property>
+
+    <property name="AvaliacaoHomologador">
+      <column name="avaliacaoHomologador" sql-type="bit" not-null="true"/>
+    </property>
+
+    <property name="JustificativaAprovador">
+      <column name="justificativaAprovador" sql-type="varchar(1024)" not-null="false"/>
+    </property>
+    
+    <property name="JustificativaHomologador">
+      <column name="justificativaHomologador" sql-type="varchar(1024)" not-null="false"/>
+    </property>
+
+    <property name="ObservacaoDocente">
+      <column name="observacaoDocente" sql-type="varchar(3072)" not-null="false"/>
+    </property>    
+
+  </class>
+
+</hibernate-mapping>

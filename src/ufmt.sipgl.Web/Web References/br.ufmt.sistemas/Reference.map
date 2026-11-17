@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?xsd=xsd3" filename="Autenticacao.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?xsd=xsd4" filename="Autenticacao0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?xsd=xsd1" filename="Autenticacao1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?xsd=xsd6" filename="Autenticacao2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?xsd=xsd2" filename="Autenticacao3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?disco" filename="Autenticacao.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?xsd=xsd0" filename="Autenticacao4.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?wsdl" filename="Autenticacao.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://sistemas.ufmt.br/ufmt.services/Autenticacao.svc?xsd=xsd5" filename="Autenticacao5.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,1 @@
+﻿INSERT INTO sipgl.TipoPeriodoIngresso (periodo, sigla, regime) Values (1, 'S', 'Semestral');

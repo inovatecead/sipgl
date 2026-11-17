@@ -1,0 +1,1919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="idbufmtModelStoreContainer" CdmEntityContainer="EntidadesIdbufmt">
+    <FunctionImportMapping FunctionImportName="ProcedureRetornarInformacaoErro" FunctionName="idbufmtModel.Store.ProcedureRetornarInformacaoErro" />
+    <FunctionImportMapping FunctionImportName="ProcedureGerarCodigoCurso" FunctionName="idbufmtModel.Store.ProcedureGerarCodigoCurso" />
+    <FunctionImportMapping FunctionImportName="ProcedureInserirEditarCoordenador" FunctionName="idbufmtModel.Store.ProcedureInserirEditarCoordenador" />
+    <FunctionImportMapping FunctionImportName="ProcedureExcluirCurso" FunctionName="idbufmtModel.Store.ProcedureExcluirCurso" />
+    <FunctionImportMapping FunctionImportName="ProcedureHomologarCurso" FunctionName="idbufmtModel.Store.ProcedureHomologarCurso" />
+    <FunctionImportMapping FunctionImportName="ProcedureExcluirEspecialidade" FunctionName="idbufmtModel.Store.ProcedureExcluirEspecialidade" />
+    <FunctionImportMapping FunctionImportName="ProcedureInserirEditarEspecialidade" FunctionName="idbufmtModel.Store.ProcedureInserirEditarEspecialidade" />
+    <FunctionImportMapping FunctionImportName="ProcedureConfirmarCorrecaoCurso" FunctionName="idbufmtModel.Store.ProcedureConfirmarCorrecaoCurso" />
+    <FunctionImportMapping FunctionImportName="ProcedureInserirEditarCurso" FunctionName="idbufmtModel.Store.ProcedureInserirEditarCurso" />
+    <FunctionImportMapping FunctionImportName="ProcedureManterPreMatriculaInscricao" FunctionName="idbufmtModel.Store.ProcedureManterPreMatriculaInscricao" />
+    <FunctionImportMapping FunctionImportName="ProcedureManterPreMatriculaPessoa" FunctionName="idbufmtModel.Store.ProcedureManterPreMatriculaPessoa" />
+    <FunctionImportMapping FunctionImportName="ProcedureManterTurma" FunctionName="idbufmtModel.Store.ProcedureManterTurma" />
+    <FunctionImportMapping FunctionImportName="ProcedureGerarCodigoProjeto" FunctionName="idbufmtModel.Store.ProcedureGerarCodigoProjeto" />
+    <FunctionImportMapping FunctionImportName="ProcedureGerarNumeroPreMatriculaInscricao" FunctionName="idbufmtModel.Store.ProcedureGerarNumeroPreMatriculaInscricao" />
+    <FunctionImportMapping FunctionImportName="ProcedureManterDisciplina" FunctionName="idbufmtModel.Store.ProcedureManterDisciplina" />
+    <EntitySetMapping Name="ControleCodigoCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.ControleCodigoCurso">
+        <MappingFragment StoreEntitySet="ControleCodigoCurso">
+          <ScalarProperty Name="codigoCursoAtual" ColumnName="codigoCursoAtual" />
+          <ScalarProperty Name="ano" ColumnName="ano" />
+          <ScalarProperty Name="controleCodigoCursoUID" ColumnName="controleCodigoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ControleEnvioEmail">
+      <EntityTypeMapping TypeName="idbufmtModel.ControleEnvioEmail">
+        <MappingFragment StoreEntitySet="ControleEnvioEmail">
+          <ScalarProperty Name="remetentePessoaUID" ColumnName="remetentePessoaUID" />
+          <ScalarProperty Name="destinatarioPessoaUID" ColumnName="destinatarioPessoaUID" />
+          <ScalarProperty Name="mensagem" ColumnName="mensagem" />
+          <ScalarProperty Name="TipoAreaSistema" ColumnName="TipoAreaSistema" />
+          <ScalarProperty Name="controleEnvioEmailUID" ColumnName="controleEnvioEmailUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ControleNumeroInscricao">
+      <EntityTypeMapping TypeName="idbufmtModel.ControleNumeroInscricao">
+        <MappingFragment StoreEntitySet="ControleNumeroInscricao">
+          <ScalarProperty Name="dataHoraCriacao" ColumnName="dataHoraCriacao" />
+          <ScalarProperty Name="numeroInscricaoAtual" ColumnName="numeroInscricaoAtual" />
+          <ScalarProperty Name="ano" ColumnName="ano" />
+          <ScalarProperty Name="controleNumeroInscricaoUID" ColumnName="controleNumeroInscricaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ControleRegistroDiscente">
+      <EntityTypeMapping TypeName="idbufmtModel.ControleRegistroDiscente">
+        <MappingFragment StoreEntitySet="ControleRegistroDiscente">
+          <ScalarProperty Name="dataHoraCriacao" ColumnName="dataHoraCriacao" />
+          <ScalarProperty Name="numeroRegistroAtual" ColumnName="numeroRegistroAtual" />
+          <ScalarProperty Name="codigoCurso" ColumnName="codigoCurso" />
+          <ScalarProperty Name="controleRegistroDiscenteUID" ColumnName="controleRegistroDiscenteUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coordenador">
+      <EntityTypeMapping TypeName="idbufmtModel.Coordenador">
+        <MappingFragment StoreEntitySet="Coordenador">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="dataHoraExclusao" ColumnName="dataHoraExclusao" />
+          <ScalarProperty Name="dataHoraCadastro" ColumnName="dataHoraCadastro" />
+          <ScalarProperty Name="tipoCoordenadorUID" ColumnName="tipoCoordenadorUID" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="cursoUID" ColumnName="cursoUID" />
+          <ScalarProperty Name="coordenadorUID" ColumnName="coordenadorUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CorrecaoCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.CorrecaoCurso">
+        <MappingFragment StoreEntitySet="CorrecaoCurso">
+          <ScalarProperty Name="dataHoraConfirmacaoCorrecao" ColumnName="dataHoraConfirmacaoCorrecao" />
+          <ScalarProperty Name="correcaoConfirmada" ColumnName="correcaoConfirmada" />
+          <ScalarProperty Name="dataHoraSolicitacaoCorrecao" ColumnName="dataHoraSolicitacaoCorrecao" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="tipoSolicitanteCorrecaoCursoUID" ColumnName="tipoSolicitanteCorrecaoCursoUID" />
+          <ScalarProperty Name="cursoUID" ColumnName="cursoUID" />
+          <ScalarProperty Name="correcaoCursoUID" ColumnName="correcaoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CorrecaoCursoMensagens">
+      <EntityTypeMapping TypeName="idbufmtModel.CorrecaoCursoMensagens">
+        <MappingFragment StoreEntitySet="CorrecaoCursoMensagens">
+          <ScalarProperty Name="datahora" ColumnName="datahora" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="responsavelServidorUID" ColumnName="responsavelServidorUID" />
+          <ScalarProperty Name="correcaoCursoUID" ColumnName="correcaoCursoUID" />
+          <ScalarProperty Name="correcaoCursoMensagensUID" ColumnName="correcaoCursoMensagensUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CorrecaoPreMatriculaInscricao">
+      <EntityTypeMapping TypeName="idbufmtModel.CorrecaoPreMatriculaInscricao">
+        <MappingFragment StoreEntitySet="CorrecaoPreMatriculaInscricao">
+          <ScalarProperty Name="dataHoraConfirmacaoCorrecao" ColumnName="dataHoraConfirmacaoCorrecao" />
+          <ScalarProperty Name="correcaoConfirmada" ColumnName="correcaoConfirmada" />
+          <ScalarProperty Name="dataHora" ColumnName="dataHora" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="responsavelServidorUID" ColumnName="responsavelServidorUID" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+          <ScalarProperty Name="correcaoPreMatriculaInscricaoUID" ColumnName="correcaoPreMatriculaInscricaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Curso">
+      <EntityTypeMapping TypeName="idbufmtModel.Curso">
+        <MappingFragment StoreEntitySet="Curso">
+          <ScalarProperty Name="codigoAcesso" ColumnName="codigoAcesso" />
+          <ScalarProperty Name="dataHoraExcluido" ColumnName="dataHoraExcluido" />
+          <ScalarProperty Name="excluido" ColumnName="excluido" />
+          <ScalarProperty Name="dataHoraHomologado" ColumnName="dataHoraHomologado" />
+          <ScalarProperty Name="tipoStatusHomologacaoUID" ColumnName="tipoStatusHomologacaoUID" />
+          <ScalarProperty Name="dataHoraUltimaAtualizacao" ColumnName="dataHoraUltimaAtualizacao" />
+          <ScalarProperty Name="dataHoraCadastro" ColumnName="dataHoraCadastro" />
+          <ScalarProperty Name="dataHoraCancelado" ColumnName="dataHoraCancelado" />
+          <ScalarProperty Name="descricaoCancelamento" ColumnName="descricaoCancelamento" />
+          <ScalarProperty Name="tipoStatusCursoUID" ColumnName="tipoStatusCursoUID" />
+          <ScalarProperty Name="dataPortariaPropg" ColumnName="dataPortariaPropg" />
+          <ScalarProperty Name="numeroPortariaPropg" ColumnName="numeroPortariaPropg" />
+          <ScalarProperty Name="dataResolucaoConsepe" ColumnName="dataResolucaoConsepe" />
+          <ScalarProperty Name="numeroResolucaoConsepe" ColumnName="numeroResolucaoConsepe" />
+          <ScalarProperty Name="cargaHoraria" ColumnName="cargaHoraria" />
+          <ScalarProperty Name="tipoModalidadeUID" ColumnName="tipoModalidadeUID" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="CNPqSubAreaConhecimentoUID" ColumnName="CNPqSubAreaConhecimentoUID" />
+          <ScalarProperty Name="unidadeUID" ColumnName="unidadeUID" />
+          <ScalarProperty Name="codigoCurso" ColumnName="codigoCurso" />
+          <ScalarProperty Name="cursoUID" ColumnName="cursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Discente">
+      <EntityTypeMapping TypeName="idbufmtModel.Discente">
+        <MappingFragment StoreEntitySet="Discente">
+          <ScalarProperty Name="tipoReservaVagasUID" ColumnName="tipoReservaVagasUID" />
+          <ScalarProperty Name="tipoPeridoIngressoUID" ColumnName="tipoPeridoIngressoUID" />
+          <ScalarProperty Name="dataIngresso" ColumnName="dataIngresso" />
+          <ScalarProperty Name="tipoFormaIngressoUID" ColumnName="tipoFormaIngressoUID" />
+          <ScalarProperty Name="especialidadeUID" ColumnName="especialidadeUID" />
+          <ScalarProperty Name="registro" ColumnName="registro" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="discenteUID" ColumnName="discenteUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disciplina">
+      <EntityTypeMapping TypeName="idbufmtModel.Disciplina">
+        <MappingFragment StoreEntitySet="Disciplina">
+          <ScalarProperty Name="cargaHorariaTotal" ColumnName="cargaHorariaTotal" />
+          <ScalarProperty Name="cargaHorariaSemanal" ColumnName="cargaHorariaSemanal" />
+          <ScalarProperty Name="cargaHorariaPratica" ColumnName="cargaHorariaPratica" />
+          <ScalarProperty Name="cargaHorariaTeorica" ColumnName="cargaHorariaTeorica" />
+          <ScalarProperty Name="sigla" ColumnName="sigla" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="disciplinaUID" ColumnName="disciplinaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Docencia">
+      <EntityTypeMapping TypeName="idbufmtModel.Docencia">
+        <MappingFragment StoreEntitySet="Docencia">
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="docenciaUID" ColumnName="docenciaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnderecoFuncionamentoCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.EnderecoFuncionamentoCurso">
+        <MappingFragment StoreEntitySet="EnderecoFuncionamentoCurso">
+          <ScalarProperty Name="siteDoCurso" ColumnName="siteDoCurso" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telefone" ColumnName="telefone" />
+          <ScalarProperty Name="municipioUID" ColumnName="municipioUID" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
+          <ScalarProperty Name="caixaPostal" ColumnName="caixaPostal" />
+          <ScalarProperty Name="complemento" ColumnName="complemento" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="logradouro" ColumnName="logradouro" />
+          <ScalarProperty Name="cursoUID" ColumnName="cursoUID" />
+          <ScalarProperty Name="enderecoFuncionamentoCursoUID" ColumnName="enderecoFuncionamentoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Especialidade">
+      <EntityTypeMapping TypeName="idbufmtModel.Especialidade">
+        <MappingFragment StoreEntitySet="Especialidade">
+          <ScalarProperty Name="excluida" ColumnName="excluida" />
+          <ScalarProperty Name="dataHoraExclusao" ColumnName="dataHoraExclusao" />
+          <ScalarProperty Name="dataHoraCadastro" ColumnName="dataHoraCadastro" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoEspecialidadeUID" ColumnName="tipoEspecialidadeUID" />
+          <ScalarProperty Name="estruturaCurricularUID" ColumnName="estruturaCurricularUID" />
+          <ScalarProperty Name="especialidadeUID" ColumnName="especialidadeUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EspecialidadeDisciplina">
+      <EntityTypeMapping TypeName="idbufmtModel.EspecialidadeDisciplina">
+        <MappingFragment StoreEntitySet="EspecialidadeDisciplina">
+          <ScalarProperty Name="disciplinaUID" ColumnName="disciplinaUID" />
+          <ScalarProperty Name="especialidadeUID" ColumnName="especialidadeUID" />
+          <ScalarProperty Name="especialidadeDisciplinaUID" ColumnName="especialidadeDisciplinaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstruturaCurricular">
+      <EntityTypeMapping TypeName="idbufmtModel.EstruturaCurricular">
+        <MappingFragment StoreEntitySet="EstruturaCurricular">
+          <ScalarProperty Name="dataFim" ColumnName="dataFim" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="cursoUID" ColumnName="cursoUID" />
+          <ScalarProperty Name="estruturaCurricularUID" ColumnName="estruturaCurricularUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Historico">
+      <EntityTypeMapping TypeName="idbufmtModel.Historico">
+        <MappingFragment StoreEntitySet="Historico">
+          <ScalarProperty Name="faltas" ColumnName="faltas" />
+          <ScalarProperty Name="nota" ColumnName="nota" />
+          <ScalarProperty Name="situacaoHistoricoUID" ColumnName="situacaoHistoricoUID" />
+          <ScalarProperty Name="turmaDisciplinaUID" ColumnName="turmaDisciplinaUID" />
+          <ScalarProperty Name="discenteUID" ColumnName="discenteUID" />
+          <ScalarProperty Name="historicoUID" ColumnName="historicoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Horario">
+      <EntityTypeMapping TypeName="idbufmtModel.Horario">
+        <MappingFragment StoreEntitySet="Horario">
+          <ScalarProperty Name="turmaDisciplinaUID" ColumnName="turmaDisciplinaUID" />
+          <ScalarProperty Name="horaFim" ColumnName="horaFim" />
+          <ScalarProperty Name="horaInicio" ColumnName="horaInicio" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="horarioUID" ColumnName="horarioUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoBolsaEstagioLei_11788_2008">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoBolsaEstagioLei_11788_2008">
+        <MappingFragment StoreEntitySet="ProjetoBolsaEstagioLei_11788_2008">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoBolsaEstagioLei_11788_2008_UID" ColumnName="projetoBolsaEstagioLei_11788_2008_UID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoBolsaoLei_8958_94">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoBolsaoLei_8958_94">
+        <MappingFragment StoreEntitySet="ProjetoBolsaoLei_8958_94">
+          <ScalarProperty Name="valorUnitarioCargaHoraria" ColumnName="valorUnitarioCargaHoraria" />
+          <ScalarProperty Name="cargaHoraiaTotal" ColumnName="cargaHoraiaTotal" />
+          <ScalarProperty Name="cargaHorariaMensal" ColumnName="cargaHorariaMensal" />
+          <ScalarProperty Name="dataFim" ColumnName="dataFim" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="atividadeNaoRegular" ColumnName="atividadeNaoRegular" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoBolsaoLei_8958_94_UID" ColumnName="projetoBolsaoLei_8958_94_UID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoColegiadoCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoColegiadoCurso">
+        <MappingFragment StoreEntitySet="ProjetoColegiadoCurso">
+          <ScalarProperty Name="tipoMembroColegiadoUID" ColumnName="tipoMembroColegiadoUID" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoColegiadoCursoUID" ColumnName="projetoColegiadoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoControleCodigo">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoControleCodigo">
+        <MappingFragment StoreEntitySet="ProjetoControleCodigo">
+          <ScalarProperty Name="codigoAtual" ColumnName="codigoAtual" />
+          <ScalarProperty Name="ano" ColumnName="ano" />
+          <ScalarProperty Name="projetoControleCodigoUID" ColumnName="projetoControleCodigoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCursoComplementoEad">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCursoComplementoEad">
+        <MappingFragment StoreEntitySet="ProjetoCursoComplementoEad">
+          <ScalarProperty Name="procedimentoRealizacaoSegundaChamada" ColumnName="procedimentoRealizacaoSegundaChamada" />
+          <ScalarProperty Name="orientacoesProcedimentoMatricula" ColumnName="orientacoesProcedimentoMatricula" />
+          <ScalarProperty Name="procedimentoDivulgacaoResultadoFinal" ColumnName="procedimentoDivulgacaoResultadoFinal" />
+          <ScalarProperty Name="procedimentoRecursoAdm" ColumnName="procedimentoRecursoAdm" />
+          <ScalarProperty Name="descricaoSelecaoCandidatos" ColumnName="descricaoSelecaoCandidatos" />
+          <ScalarProperty Name="criteriosComprovacaoCarenciaFinanceira" ColumnName="criteriosComprovacaoCarenciaFinanceira" />
+          <ScalarProperty Name="criteriosSelecao" ColumnName="criteriosSelecao" />
+          <ScalarProperty Name="dataPrevisaoInicioAulas" ColumnName="dataPrevisaoInicioAulas" />
+          <ScalarProperty Name="dataFimMatricula" ColumnName="dataFimMatricula" />
+          <ScalarProperty Name="dataInicioMatricula" ColumnName="dataInicioMatricula" />
+          <ScalarProperty Name="dataFimSelecao" ColumnName="dataFimSelecao" />
+          <ScalarProperty Name="dataInicioSelecao" ColumnName="dataInicioSelecao" />
+          <ScalarProperty Name="dataFimInscricao" ColumnName="dataFimInscricao" />
+          <ScalarProperty Name="dataInicioInscricao" ColumnName="dataInicioInscricao" />
+          <ScalarProperty Name="descricaoAmbienteVirtualAprendizagem" ColumnName="descricaoAmbienteVirtualAprendizagem" />
+          <ScalarProperty Name="descricaoMaterialDidaticoTextualMultimidia" ColumnName="descricaoMaterialDidaticoTextualMultimidia" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoCursoComplementoEadUID" ColumnName="projetoCursoComplementoEadUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCursoComplementoEadEndereco">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCursoComplementoEadEndereco">
+        <MappingFragment StoreEntitySet="ProjetoCursoComplementoEadEndereco">
+          <ScalarProperty Name="tipoEnderecoEadUID" ColumnName="tipoEnderecoEadUID" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+          <ScalarProperty Name="projetoCursoComplementoEadUID" ColumnName="projetoCursoComplementoEadUID" />
+          <ScalarProperty Name="projetoCursoComplementoEadEnderecoUID" ColumnName="projetoCursoComplementoEadEnderecoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCursoComplementoEadVagas">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCursoComplementoEadVagas">
+        <MappingFragment StoreEntitySet="ProjetoCursoComplementoEadVagas">
+          <ScalarProperty Name="poloEadEnderecoUID" ColumnName="poloEadEnderecoUID" />
+          <ScalarProperty Name="projetoCursoVagasUID" ColumnName="projetoCursoVagasUID" />
+          <ScalarProperty Name="projetoCursoComplementoEadUID" ColumnName="projetoCursoComplementoEadUID" />
+          <ScalarProperty Name="projetoCursoComplementoEadVagasUID" ColumnName="projetoCursoComplementoEadVagasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCursoComplementoPresencial">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCursoComplementoPresencial">
+        <MappingFragment StoreEntitySet="ProjetoCursoComplementoPresencial">
+          <ScalarProperty Name="cargaHorariaPeriodicidade" ColumnName="cargaHorariaPeriodicidade" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+          <ScalarProperty Name="tipoPeriodicidadeUID" ColumnName="tipoPeriodicidadeUID" />
+          <ScalarProperty Name="tipoTurnoOfertaUID" ColumnName="tipoTurnoOfertaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoCursoComplementoPresencialUID" ColumnName="projetoCursoComplementoPresencialUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCursoComplementoPresencialVagas">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCursoComplementoPresencialVagas">
+        <MappingFragment StoreEntitySet="ProjetoCursoComplementoPresencialVagas">
+          <ScalarProperty Name="projetoCursoVagasUID" ColumnName="projetoCursoVagasUID" />
+          <ScalarProperty Name="projetoCursoComplementoPresencialUID" ColumnName="projetoCursoComplementoPresencialUID" />
+          <ScalarProperty Name="projetoCursoComplementoPresencialVagasUID" ColumnName="projetoCursoComplementoPresencialVagasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCursoVagas">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCursoVagas">
+        <MappingFragment StoreEntitySet="ProjetoCursoVagas">
+          <ScalarProperty Name="tipoVagasUID" ColumnName="tipoVagasUID" />
+          <ScalarProperty Name="numeroVagas" ColumnName="numeroVagas" />
+          <ScalarProperty Name="projetoCursoVagasUID" ColumnName="projetoCursoVagasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoDespesas">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoDespesas">
+        <MappingFragment StoreEntitySet="ProjetoDespesas">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="tipoDespesaUID" ColumnName="tipoDespesaUID" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoDespesasUID" ColumnName="projetoDespesasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoDiarias">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoDiarias">
+        <MappingFragment StoreEntitySet="ProjetoDiarias">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="dataFim" ColumnName="dataFim" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="municipioUID" ColumnName="municipioUID" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoDiariasUID" ColumnName="projetoDiariasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoEquipamento">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoEquipamento">
+        <MappingFragment StoreEntitySet="ProjetoEquipamento">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="tipoEquipamentoUID" ColumnName="tipoEquipamentoUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoEquipamentoUID" ColumnName="projetoEquipamentoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoInstalacao">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoInstalacao">
+        <MappingFragment StoreEntitySet="ProjetoInstalacao">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="tipoInstalacaoUID" ColumnName="tipoInstalacaoUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoInstalacaoUID" ColumnName="projetoInstalacaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoMaterialConsumo">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoMaterialConsumo">
+        <MappingFragment StoreEntitySet="ProjetoMaterialConsumo">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="tipoMaterialConsumoUID" ColumnName="tipoMaterialConsumoUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoMaterialConsumoUID" ColumnName="projetoMaterialConsumoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoMaterialPermanente">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoMaterialPermanente">
+        <MappingFragment StoreEntitySet="ProjetoMaterialPermanente">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="tipoMaterialPemanenteUID" ColumnName="tipoMaterialPemanenteUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoMaterialPermanenteUID" ColumnName="projetoMaterialPermanenteUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoObras">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoObras">
+        <MappingFragment StoreEntitySet="ProjetoObras">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="tipoObraUID" ColumnName="tipoObraUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoObrasUID" ColumnName="projetoObrasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoPassagens">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoPassagens">
+        <MappingFragment StoreEntitySet="ProjetoPassagens">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="trecho" ColumnName="trecho" />
+          <ScalarProperty Name="tipoPassagemUID" ColumnName="tipoPassagemUID" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoPassagensUID" ColumnName="projetoPassagensUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoPessoalEncargos">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoPessoalEncargos">
+        <MappingFragment StoreEntitySet="ProjetoPessoalEncargos">
+          <ScalarProperty Name="valorMensal" ColumnName="valorMensal" />
+          <ScalarProperty Name="dataFim" ColumnName="dataFim" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="tipoAtividadeUID" ColumnName="tipoAtividadeUID" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoPessoalEncargosUID" ColumnName="projetoPessoalEncargosUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoPrevisaoReceitas">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoPrevisaoReceitas">
+        <MappingFragment StoreEntitySet="ProjetoPrevisaoReceitas">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="numeroParcelas" ColumnName="numeroParcelas" />
+          <ScalarProperty Name="numeroAlunos" ColumnName="numeroAlunos" />
+          <ScalarProperty Name="tipoReceitaUID" ColumnName="tipoReceitaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoPrevisaoReceitasUID" ColumnName="projetoPrevisaoReceitasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoServicoTerceirosPessoaFisica">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoServicoTerceirosPessoaFisica">
+        <MappingFragment StoreEntitySet="ProjetoServicoTerceirosPessoaFisica">
+          <ScalarProperty Name="encargosSociais" ColumnName="encargosSociais" />
+          <ScalarProperty Name="valorUnitarioCargaHoraria" ColumnName="valorUnitarioCargaHoraria" />
+          <ScalarProperty Name="cargaHorariaTotal" ColumnName="cargaHorariaTotal" />
+          <ScalarProperty Name="cargaHorariaMensal" ColumnName="cargaHorariaMensal" />
+          <ScalarProperty Name="dataFim" ColumnName="dataFim" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="atividadeNaoRegular" ColumnName="atividadeNaoRegular" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoServicoTerceirosPessoaFisicaUID" ColumnName="projetoServicoTerceirosPessoaFisicaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoServicoTerceirosPessoJuridica">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoServicoTerceirosPessoJuridica">
+        <MappingFragment StoreEntitySet="ProjetoServicoTerceirosPessoJuridica">
+          <ScalarProperty Name="valorUnitario" ColumnName="valorUnitario" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="tipoServicoTerceirosPessoaJuridicaUID" ColumnName="tipoServicoTerceirosPessoaJuridicaUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoServicoTerceirosPessoJuridicaUID" ColumnName="projetoServicoTerceirosPessoJuridicaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAtividade">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoAtividade">
+        <MappingFragment StoreEntitySet="TipoAtividade">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoAtividadeUID" ColumnName="tipoAtividadeUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoCoordenador">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoCoordenador">
+        <MappingFragment StoreEntitySet="TipoCoordenador">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoCoordenadorUID" ColumnName="tipoCoordenadorUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoDespesa">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoDespesa">
+        <MappingFragment StoreEntitySet="TipoDespesa">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoDespesaUID" ColumnName="tipoDespesaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEnderecoEad">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoEnderecoEad">
+        <MappingFragment StoreEntitySet="TipoEnderecoEad">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoEnderecoEadUID" ColumnName="tipoEnderecoEadUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEquipamento">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoEquipamento">
+        <MappingFragment StoreEntitySet="TipoEquipamento">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoEquipamentoUID" ColumnName="tipoEquipamentoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEspecialidade">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoEspecialidade">
+        <MappingFragment StoreEntitySet="TipoEspecialidade">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoEspecialidadeUID" ColumnName="tipoEspecialidadeUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoFinanciamento">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoFinanciamento">
+        <MappingFragment StoreEntitySet="TipoFinanciamento">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoFinanciamentoUID" ColumnName="tipoFinanciamentoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoFormaIngresso">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoFormaIngresso">
+        <MappingFragment StoreEntitySet="TipoFormaIngresso">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="sigla" ColumnName="sigla" />
+          <ScalarProperty Name="tipoFormaIngressoUID" ColumnName="tipoFormaIngressoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoGestaoFinanceira">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoGestaoFinanceira">
+        <MappingFragment StoreEntitySet="TipoGestaoFinanceira">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoGestaoFinanceiraUID" ColumnName="tipoGestaoFinanceiraUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoInstalacao">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoInstalacao">
+        <MappingFragment StoreEntitySet="TipoInstalacao">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoInstalacaoUID" ColumnName="tipoInstalacaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMaterialConsumo">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoMaterialConsumo">
+        <MappingFragment StoreEntitySet="TipoMaterialConsumo">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoMaterialConsumoUID" ColumnName="tipoMaterialConsumoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMaterialPermanente">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoMaterialPermanente">
+        <MappingFragment StoreEntitySet="TipoMaterialPermanente">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoMaterialPermanenteUID" ColumnName="tipoMaterialPermanenteUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMembroColegiadoCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoMembroColegiadoCurso">
+        <MappingFragment StoreEntitySet="TipoMembroColegiadoCurso">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoMembroColegiadoCursoUID" ColumnName="tipoMembroColegiadoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoObra">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoObra">
+        <MappingFragment StoreEntitySet="TipoObra">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoObraUID" ColumnName="tipoObraUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPassagem">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoPassagem">
+        <MappingFragment StoreEntitySet="TipoPassagem">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoPassagemUID" ColumnName="tipoPassagemUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPeriodicidade">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoPeriodicidade">
+        <MappingFragment StoreEntitySet="TipoPeriodicidade">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoPeriodicidadeUID" ColumnName="tipoPeriodicidadeUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPeriodoIngresso">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoPeriodoIngresso">
+        <MappingFragment StoreEntitySet="TipoPeriodoIngresso">
+          <ScalarProperty Name="regime" ColumnName="regime" />
+          <ScalarProperty Name="sigla" ColumnName="sigla" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="tipoPeriodoIngressoUID" ColumnName="tipoPeriodoIngressoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoReceita">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoReceita">
+        <MappingFragment StoreEntitySet="TipoReceita">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoReceitaUID" ColumnName="tipoReceitaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoReservaVagas">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoReservaVagas">
+        <MappingFragment StoreEntitySet="TipoReservaVagas">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoReservaVagasUID" ColumnName="tipoReservaVagasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoServicoTerceirosPessoaJuridica">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoServicoTerceirosPessoaJuridica">
+        <MappingFragment StoreEntitySet="TipoServicoTerceirosPessoaJuridica">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoServicoTerceirosPessoaJuridicaUID" ColumnName="tipoServicoTerceirosPessoaJuridicaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoSituacaoInscricao">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoSituacaoInscricao">
+        <MappingFragment StoreEntitySet="TipoSituacaoInscricao">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoSituacaoInscricaoUID" ColumnName="tipoSituacaoInscricaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoSolicitanteCorrecaoCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoSolicitanteCorrecaoCurso">
+        <MappingFragment StoreEntitySet="TipoSolicitanteCorrecaoCurso">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoSolicitanteCorrecaoCursoUID" ColumnName="tipoSolicitanteCorrecaoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoStatusCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoStatusCurso">
+        <MappingFragment StoreEntitySet="TipoStatusCurso">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoStatusCursoUID" ColumnName="tipoStatusCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoStatusHomologacao">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoStatusHomologacao">
+        <MappingFragment StoreEntitySet="TipoStatusHomologacao">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoStatusHomologacaoUID" ColumnName="tipoStatusHomologacaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoVagas">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoVagas">
+        <MappingFragment StoreEntitySet="TipoVagas">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoVagasUID" ColumnName="tipoVagasUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TurmaDisciplina">
+      <EntityTypeMapping TypeName="idbufmtModel.TurmaDisciplina">
+        <MappingFragment StoreEntitySet="TurmaDisciplina">
+          <ScalarProperty Name="docenciaUID" ColumnName="docenciaUID" />
+          <ScalarProperty Name="disciplinaUID" ColumnName="disciplinaUID" />
+          <ScalarProperty Name="turmaUID" ColumnName="turmaUID" />
+          <ScalarProperty Name="turmaDisciplinaUID" ColumnName="turmaDisciplinaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewCNPqSubAreaConhecimento">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewCNPqSubAreaConhecimento">
+        <MappingFragment StoreEntitySet="ViewCNPqSubAreaConhecimento">
+          <ScalarProperty Name="nomeConcatenado" ColumnName="nomeConcatenado" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="CNPqSubAreaConhecimentoUID" ColumnName="CNPqSubAreaConhecimentoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewCurso">
+        <MappingFragment StoreEntitySet="ViewCurso">
+          <ScalarProperty Name="possuiCorrecaoCoordenador" ColumnName="possuiCorrecaoCoordenador" />
+          <ScalarProperty Name="possuiCorrecaoAdministrador" ColumnName="possuiCorrecaoAdministrador" />
+          <ScalarProperty Name="possuiCorrecaoPendente" ColumnName="possuiCorrecaoPendente" />
+          <ScalarProperty Name="emailViceCoordenador" ColumnName="emailViceCoordenador" />
+          <ScalarProperty Name="nomeViceCoordenador" ColumnName="nomeViceCoordenador" />
+          <ScalarProperty Name="ViceCoordenadorServidorUID" ColumnName="ViceCoordenadorServidorUID" />
+          <ScalarProperty Name="emailCoordenador" ColumnName="emailCoordenador" />
+          <ScalarProperty Name="nomeCoordenador" ColumnName="nomeCoordenador" />
+          <ScalarProperty Name="coordenadorServidorUID" ColumnName="coordenadorServidorUID" />
+          <ScalarProperty Name="numeroEspecialidades" ColumnName="numeroEspecialidades" />
+          <ScalarProperty Name="dataFimInscricao" ColumnName="dataFimInscricao" />
+          <ScalarProperty Name="dataInicioInscricao" ColumnName="dataInicioInscricao" />
+          <ScalarProperty Name="dataFimEstruturaCurricular" ColumnName="dataFimEstruturaCurricular" />
+          <ScalarProperty Name="dataInicioEstruturaCurricular" ColumnName="dataInicioEstruturaCurricular" />
+          <ScalarProperty Name="estruturaCurricularUID" ColumnName="estruturaCurricularUID" />
+          <ScalarProperty Name="codigoAcesso" ColumnName="codigoAcesso" />
+          <ScalarProperty Name="dataHoraExcluido" ColumnName="dataHoraExcluido" />
+          <ScalarProperty Name="excluido" ColumnName="excluido" />
+          <ScalarProperty Name="dataHoraHomologado" ColumnName="dataHoraHomologado" />
+          <ScalarProperty Name="nomeTipoStatusHomologacao" ColumnName="nomeTipoStatusHomologacao" />
+          <ScalarProperty Name="tipoStatusHomologacaoUID" ColumnName="tipoStatusHomologacaoUID" />
+          <ScalarProperty Name="dataHoraUltimaAtualizacao" ColumnName="dataHoraUltimaAtualizacao" />
+          <ScalarProperty Name="descricaoCancelamento" ColumnName="descricaoCancelamento" />
+          <ScalarProperty Name="nomeTipoStatusCurso" ColumnName="nomeTipoStatusCurso" />
+          <ScalarProperty Name="tipoStatusCursoUID" ColumnName="tipoStatusCursoUID" />
+          <ScalarProperty Name="dataPortariaPropg" ColumnName="dataPortariaPropg" />
+          <ScalarProperty Name="numeroPortariaPropg" ColumnName="numeroPortariaPropg" />
+          <ScalarProperty Name="dataResolucaoConsepe" ColumnName="dataResolucaoConsepe" />
+          <ScalarProperty Name="numeroResolucaoConsepe" ColumnName="numeroResolucaoConsepe" />
+          <ScalarProperty Name="cargaHoraria" ColumnName="cargaHoraria" />
+          <ScalarProperty Name="nomeTipoModalidade" ColumnName="nomeTipoModalidade" />
+          <ScalarProperty Name="tipoModalidadeUID" ColumnName="tipoModalidadeUID" />
+          <ScalarProperty Name="nomeCurso" ColumnName="nomeCurso" />
+          <ScalarProperty Name="nomeCNPqSubAreaConhecimento" ColumnName="nomeCNPqSubAreaConhecimento" />
+          <ScalarProperty Name="CNPqSubAreaConhecimentoUID" ColumnName="CNPqSubAreaConhecimentoUID" />
+          <ScalarProperty Name="nomeCNPqAreaConhecimento" ColumnName="nomeCNPqAreaConhecimento" />
+          <ScalarProperty Name="CNPqAreaConhecimentoUID" ColumnName="CNPqAreaConhecimentoUID" />
+          <ScalarProperty Name="nomeCNPqGrandeAreaConhecimento" ColumnName="nomeCNPqGrandeAreaConhecimento" />
+          <ScalarProperty Name="CNPqGrandeAreaConhecimentoUID" ColumnName="CNPqGrandeAreaConhecimentoUID" />
+          <ScalarProperty Name="nomeUnidadeConcatenado" ColumnName="nomeUnidadeConcatenado" />
+          <ScalarProperty Name="unidadeUID" ColumnName="unidadeUID" />
+          <ScalarProperty Name="nomeCampus" ColumnName="nomeCampus" />
+          <ScalarProperty Name="campusUID" ColumnName="campusUID" />
+          <ScalarProperty Name="codigoCurso" ColumnName="codigoCurso" />
+          <ScalarProperty Name="cursoUID" ColumnName="cursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewInstituicaoEnsinoSuperior">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewInstituicaoEnsinoSuperior">
+        <MappingFragment StoreEntitySet="ViewInstituicaoEnsinoSuperior">
+          <ScalarProperty Name="uf" ColumnName="uf" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="instituicaoEnsinoUID" ColumnName="instituicaoEnsinoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewProjetoCursoEAD">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewProjetoCursoEAD">
+        <MappingFragment StoreEntitySet="ViewProjetoCursoEAD">
+          <ScalarProperty Name="Minuta_Edital" ColumnName="Minuta Edital" />
+          <ScalarProperty Name="Objetivos" ColumnName="Objetivos" />
+          <ScalarProperty Name="Justificativa" ColumnName="Justificativa" />
+          <ScalarProperty Name="Material_Bibliográfico" ColumnName="Material Bibliográfico" />
+          <ScalarProperty Name="Equipamentos" ColumnName="Equipamentos" />
+          <ScalarProperty Name="Instalações" ColumnName="Instalações" />
+          <ScalarProperty Name="Público_alvo" ColumnName="Público-alvo" />
+          <ScalarProperty Name="Número_de_Vagas" ColumnName="Número de Vagas" />
+          <ScalarProperty Name="Tipo_Vaga" ColumnName="Tipo Vaga" />
+          <ScalarProperty Name="Carga_Hor__Total" ColumnName="Carga Hor. Total" />
+          <ScalarProperty Name="Término_Curso" ColumnName="Término Curso" />
+          <ScalarProperty Name="Início_Curso" ColumnName="Início Curso" />
+          <ScalarProperty Name="Vice_Coord__E_mail" ColumnName="Vice-Coord. E-mail" />
+          <ScalarProperty Name="Vice_Coord__Regime_de_Trabalho" ColumnName="Vice-Coord. Regime de Trabalho" />
+          <ScalarProperty Name="Vice_Coord__Telefone_Celular" ColumnName="Vice-Coord. Telefone Celular" />
+          <ScalarProperty Name="Vice_Coord__Telefone_Residencial" ColumnName="Vice-Coord. Telefone Residencial" />
+          <ScalarProperty Name="Vice_Coord__Unidade_de_Lotação" ColumnName="Vice-Coord. Unidade de Lotação" />
+          <ScalarProperty Name="Vice_Coord__Titulação" ColumnName="Vice-Coord. Titulação" />
+          <ScalarProperty Name="Vice_Coord__CPF" ColumnName="Vice-Coord. CPF" />
+          <ScalarProperty Name="Vice_Coord__Nome" ColumnName="Vice-Coord. Nome" />
+          <ScalarProperty Name="Coord__E_mail" ColumnName="Coord. E-mail" />
+          <ScalarProperty Name="Coord__Regime_de_Trabalho" ColumnName="Coord. Regime de Trabalho" />
+          <ScalarProperty Name="Coord__Telefone_Celular" ColumnName="Coord. Telefone Celular" />
+          <ScalarProperty Name="Coord__Telefone_Residencial" ColumnName="Coord. Telefone Residencial" />
+          <ScalarProperty Name="Coord__Unidade_de_Lotação" ColumnName="Coord. Unidade de Lotação" />
+          <ScalarProperty Name="Coord__Titulação" ColumnName="Coord. Titulação" />
+          <ScalarProperty Name="Coord__CPF" ColumnName="Coord. CPF" />
+          <ScalarProperty Name="Coord__Nome" ColumnName="Coord. Nome" />
+          <ScalarProperty Name="Site_do_Curso" ColumnName="Site do Curso" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Município" ColumnName="Município" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Caixa_Postal" ColumnName="Caixa Postal" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Nº" ColumnName="Nº" />
+          <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+          <ScalarProperty Name="Unidade_Proponente" ColumnName="Unidade Proponente" />
+          <ScalarProperty Name="Área_do_Conhecimento" ColumnName="Área do Conhecimento" />
+          <ScalarProperty Name="Nome_do_Curso" ColumnName="Nome do Curso" />
+          <ScalarProperty Name="codigoProjetoCurso" ColumnName="codigoProjetoCurso" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewProjetoCursoPresencial">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewProjetoCursoPresencial">
+        <MappingFragment StoreEntitySet="ViewProjetoCursoPresencial">
+          <ScalarProperty Name="Minuta_Edital" ColumnName="Minuta Edital" />
+          <ScalarProperty Name="Objetivos" ColumnName="Objetivos" />
+          <ScalarProperty Name="Justificativa" ColumnName="Justificativa" />
+          <ScalarProperty Name="Material_Bibliográfico" ColumnName="Material Bibliográfico" />
+          <ScalarProperty Name="Equipamentos" ColumnName="Equipamentos" />
+          <ScalarProperty Name="Instalações" ColumnName="Instalações" />
+          <ScalarProperty Name="Público_alvo" ColumnName="Público-alvo" />
+          <ScalarProperty Name="Número_de_Vagas" ColumnName="Número de Vagas" />
+          <ScalarProperty Name="Tipo_Vaga" ColumnName="Tipo Vaga" />
+          <ScalarProperty Name="Periodicidade" ColumnName="Periodicidade" />
+          <ScalarProperty Name="Turno_de_Oferta" ColumnName="Turno de Oferta" />
+          <ScalarProperty Name="Carga_Hor__Total" ColumnName="Carga Hor. Total" />
+          <ScalarProperty Name="Término_Curso" ColumnName="Término Curso" />
+          <ScalarProperty Name="Início_Curso" ColumnName="Início Curso" />
+          <ScalarProperty Name="Vice_Coord__E_mail" ColumnName="Vice-Coord. E-mail" />
+          <ScalarProperty Name="Vice_Coord__Regime_de_Trabalho" ColumnName="Vice-Coord. Regime de Trabalho" />
+          <ScalarProperty Name="Vice_Coord__Telefone_Celular" ColumnName="Vice-Coord. Telefone Celular" />
+          <ScalarProperty Name="Vice_Coord__Telefone_Residencial" ColumnName="Vice-Coord. Telefone Residencial" />
+          <ScalarProperty Name="Vice_Coord__Unidade_de_Lotação" ColumnName="Vice-Coord. Unidade de Lotação" />
+          <ScalarProperty Name="Vice_Coord__Titulação" ColumnName="Vice-Coord. Titulação" />
+          <ScalarProperty Name="Vice_Coord__CPF" ColumnName="Vice-Coord. CPF" />
+          <ScalarProperty Name="Vice_Coord__Nome" ColumnName="Vice-Coord. Nome" />
+          <ScalarProperty Name="Coord__E_mail" ColumnName="Coord. E-mail" />
+          <ScalarProperty Name="Coord__Regime_de_Trabalho" ColumnName="Coord. Regime de Trabalho" />
+          <ScalarProperty Name="Coord__Telefone_Celular" ColumnName="Coord. Telefone Celular" />
+          <ScalarProperty Name="Coord__Telefone_Residencial" ColumnName="Coord. Telefone Residencial" />
+          <ScalarProperty Name="Coord__Unidade_de_Lotação" ColumnName="Coord. Unidade de Lotação" />
+          <ScalarProperty Name="Coord__Titulação" ColumnName="Coord. Titulação" />
+          <ScalarProperty Name="Coord__CPF" ColumnName="Coord. CPF" />
+          <ScalarProperty Name="Coord__Nome" ColumnName="Coord. Nome" />
+          <ScalarProperty Name="Site_do_Curso" ColumnName="Site do Curso" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Município" ColumnName="Município" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Caixa_Postal" ColumnName="Caixa Postal" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Nº" ColumnName="Nº" />
+          <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+          <ScalarProperty Name="Unidade_Proponente" ColumnName="Unidade Proponente" />
+          <ScalarProperty Name="Área_do_Conhecimento" ColumnName="Área do Conhecimento" />
+          <ScalarProperty Name="Nome_do_Curso" ColumnName="Nome do Curso" />
+          <ScalarProperty Name="codigoProjetoCurso" ColumnName="codigoProjetoCurso" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewRelatorioGeralCoodenadores">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewRelatorioGeralCoodenadores">
+        <MappingFragment StoreEntitySet="ViewRelatorioGeralCoodenadores">
+          <ScalarProperty Name="Titulação" ColumnName="Titulação" />
+          <ScalarProperty Name="Telefone_Comercial" ColumnName="Telefone Comercial" />
+          <ScalarProperty Name="Telefone_Secundário" ColumnName="Telefone Secundário" />
+          <ScalarProperty Name="Telefone_Primário" ColumnName="Telefone Primário" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Unidade_de_Lotação" ColumnName="Unidade de Lotação" />
+          <ScalarProperty Name="Campus" ColumnName="Campus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewRelatorioGeralCursos">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewRelatorioGeralCursos">
+        <MappingFragment StoreEntitySet="ViewRelatorioGeralCursos">
+          <ScalarProperty Name="Data_de_Fim" ColumnName="Data de Fim" />
+          <ScalarProperty Name="Data_de_Início" ColumnName="Data de Início" />
+          <ScalarProperty Name="Data_da_Resolução_CONSEPE" ColumnName="Data da Resolução CONSEPE" />
+          <ScalarProperty Name="Número_da_Resolução_CONSEPE" ColumnName="Número da Resolução CONSEPE" />
+          <ScalarProperty Name="Código_do_Curso" ColumnName="Código do Curso" />
+          <ScalarProperty Name="Nome_do_Curso" ColumnName="Nome do Curso" />
+          <ScalarProperty Name="Campus" ColumnName="Campus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewUnidade">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewUnidade">
+        <MappingFragment StoreEntitySet="ViewUnidade">
+          <ScalarProperty Name="nomeConcatenado" ColumnName="nomeConcatenado" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="campusUID" ColumnName="campusUID" />
+          <ScalarProperty Name="unidadeUID" ColumnName="unidadeUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoModalidade">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoModalidade">
+        <MappingFragment StoreEntitySet="TipoModalidade">
+          <ScalarProperty Name="SiglaSistema" ColumnName="SiglaSistema" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoModalidadeUID" ColumnName="tipoModalidadeUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Campus">
+      <EntityTypeMapping TypeName="idbufmtModel.Campus">
+        <MappingFragment StoreEntitySet="Campus">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="codigoExterno" ColumnName="codigoExterno" />
+          <ScalarProperty Name="campusUID" ColumnName="campusUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CNPqAreaConhecimento">
+      <EntityTypeMapping TypeName="idbufmtModel.CNPqAreaConhecimento">
+        <MappingFragment StoreEntitySet="CNPqAreaConhecimento">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="CNPqNumero" ColumnName="CNPqNumero" />
+          <ScalarProperty Name="CNPqGrandeAreaConhecimentoUID" ColumnName="CNPqGrandeAreaConhecimentoUID" />
+          <ScalarProperty Name="CNPqAreaConhecimentoUID" ColumnName="CNPqAreaConhecimentoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CNPqGrandeAreaConhecimento">
+      <EntityTypeMapping TypeName="idbufmtModel.CNPqGrandeAreaConhecimento">
+        <MappingFragment StoreEntitySet="CNPqGrandeAreaConhecimento">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="CNPqNumero" ColumnName="CNPqNumero" />
+          <ScalarProperty Name="CNPqGrandeAreaConhecimentoUID" ColumnName="CNPqGrandeAreaConhecimentoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CNPqSubAreaConhecimento">
+      <EntityTypeMapping TypeName="idbufmtModel.CNPqSubAreaConhecimento">
+        <MappingFragment StoreEntitySet="CNPqSubAreaConhecimento">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="CNPqNumero" ColumnName="CNPqNumero" />
+          <ScalarProperty Name="CNPqAreaConhecimentoUID" ColumnName="CNPqAreaConhecimentoUID" />
+          <ScalarProperty Name="CNPqSubAreaConhecimentoUID" ColumnName="CNPqSubAreaConhecimentoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Municipio">
+      <EntityTypeMapping TypeName="idbufmtModel.Municipio">
+        <MappingFragment StoreEntitySet="Municipio">
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="MunicipioUID" ColumnName="MunicipioUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEstadoCivil">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoEstadoCivil">
+        <MappingFragment StoreEntitySet="TipoEstadoCivil">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoEstadoCivilUID" ColumnName="tipoEstadoCivilUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoInstituicaoEnsino">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoInstituicaoEnsino">
+        <MappingFragment StoreEntitySet="TipoInstituicaoEnsino">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoInstituicaoEnsinoUID" ColumnName="tipoInstituicaoEnsinoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoCorRaca">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoCorRaca">
+        <MappingFragment StoreEntitySet="TipoCorRaca">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoCorRacaUID" ColumnName="tipoCorRacaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pais">
+      <EntityTypeMapping TypeName="idbufmtModel.Pais">
+        <MappingFragment StoreEntitySet="Pais">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="paisUID" ColumnName="paisUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoFaixaRendaFamiliar">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoFaixaRendaFamiliar">
+        <MappingFragment StoreEntitySet="TipoFaixaRendaFamiliar">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoFaixaRendaFamiliarUID" ColumnName="tipoFaixaRendaFamiliarUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UF">
+      <EntityTypeMapping TypeName="idbufmtModel.UF">
+        <MappingFragment StoreEntitySet="UF">
+          <ScalarProperty Name="CodigoExterno" ColumnName="CodigoExterno" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="UFUID" ColumnName="UFUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InstituicaoEnsino">
+      <EntityTypeMapping TypeName="idbufmtModel.InstituicaoEnsino">
+        <MappingFragment StoreEntitySet="InstituicaoEnsino">
+          <ScalarProperty Name="tipoCondicaoFuncionamentoIEUID" ColumnName="tipoCondicaoFuncionamentoIEUID" />
+          <ScalarProperty Name="municipioUID" ColumnName="municipioUID" />
+          <ScalarProperty Name="tipoInstituicaoEnsinoUID" ColumnName="tipoInstituicaoEnsinoUID" />
+          <ScalarProperty Name="tipoDependeciaAdministrativaUID" ColumnName="tipoDependeciaAdministrativaUID" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoOrganizacaoAcademicaIEUID" ColumnName="tipoOrganizacaoAcademicaIEUID" />
+          <ScalarProperty Name="tipoNivelInstituicaoEnsinoUID" ColumnName="tipoNivelInstituicaoEnsinoUID" />
+          <ScalarProperty Name="instituicaoEnsinoUID" ColumnName="instituicaoEnsinoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ProcedureExcluirProjetoCurso" FunctionName="idbufmtModel.Store.ProcedureExcluirProjetoCurso" />
+    <EntitySetMapping Name="ViewDadosCursoSiga">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewDadosCursoSiga">
+        <MappingFragment StoreEntitySet="ViewDadosCursoSiga">
+          <ScalarProperty Name="sigaautorizacaocurso" ColumnName="sigaautorizacaocurso" />
+          <ScalarProperty Name="sigaperfilcurso" ColumnName="sigaperfilcurso" />
+          <ScalarProperty Name="sigahistoricocurso" ColumnName="sigahistoricocurso" />
+          <ScalarProperty Name="sigaobs2reconhecimento" ColumnName="sigaobs2reconhecimento" />
+          <ScalarProperty Name="sigaobsreconhecimento" ColumnName="sigaobsreconhecimento" />
+          <ScalarProperty Name="sigamec2reconhecimento" ColumnName="sigamec2reconhecimento" />
+          <ScalarProperty Name="sigamecreconhecimento" ColumnName="sigamecreconhecimento" />
+          <ScalarProperty Name="sigaanomaxgradcurso" ColumnName="sigaanomaxgradcurso" />
+          <ScalarProperty Name="sigaanomingradcurso" ColumnName="sigaanomingradcurso" />
+          <ScalarProperty Name="sigadescrturno" ColumnName="sigadescrturno" />
+          <ScalarProperty Name="sigadescrregime" ColumnName="sigadescrregime" />
+          <ScalarProperty Name="descr03_habilitacao" ColumnName="descr03_habilitacao" />
+          <ScalarProperty Name="descr02_habilitacao" ColumnName="descr02_habilitacao" />
+          <ScalarProperty Name="descr01_habilitacao" ColumnName="descr01_habilitacao" />
+          <ScalarProperty Name="sigadescrgrau" ColumnName="sigadescrgrau" />
+          <ScalarProperty Name="sigafonecurso" ColumnName="sigafonecurso" />
+          <ScalarProperty Name="siganomesenha" ColumnName="siganomesenha" />
+          <ScalarProperty Name="siganomepinstituto" ColumnName="siganomepinstituto" />
+          <ScalarProperty Name="siganomecp1curso" ColumnName="siganomecp1curso" />
+          <ScalarProperty Name="sigacampusvest" ColumnName="sigacampusvest" />
+          <ScalarProperty Name="totalvagas" ColumnName="totalvagas" />
+          <ScalarProperty Name="siganomecursovest" ColumnName="siganomecursovest" />
+          <ScalarProperty Name="sigatipovest" ColumnName="sigatipovest" />
+          <ScalarProperty Name="sigacodcursosiga" ColumnName="sigacodcursosiga" />
+          <ScalarProperty Name="sigaanovest" ColumnName="sigaanovest" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GetDiretorUnidade">
+      <EntityTypeMapping TypeName="idbufmtModel.GetDiretorUnidade">
+        <MappingFragment StoreEntitySet="GetDiretorUnidade">
+          <ScalarProperty Name="campusUID" ColumnName="campusUID" />
+          <ScalarProperty Name="unidadeSuperiorUID" ColumnName="unidadeSuperiorUID" />
+          <ScalarProperty Name="unidadeUID" ColumnName="unidadeUID" />
+          <ScalarProperty Name="NomeDiretoria" ColumnName="NomeDiretoria" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewMunicipio">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewMunicipio">
+        <MappingFragment StoreEntitySet="ViewMunicipio">
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="MunicipioUID" ColumnName="MunicipioUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ProcedureObterCoordenadorCurso" FunctionName="idbufmtModel.Store.ProcedureObterCoordenadorCurso">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="idbufmtModel.ProcedureObterCoordenadorCurso_Result">
+          <ScalarProperty Name="usuarioUID" ColumnName="usuarioUID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Permissao" ColumnName="Permissao" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="dataLimite" ColumnName="dataLimite" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="ViewCandidatoCoordenador">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewCandidatoCoordenador">
+        <MappingFragment StoreEntitySet="ViewCandidatoCoordenador">
+          <ScalarProperty Name="vinculo" ColumnName="vinculo" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="matriculaSiape" ColumnName="matriculaSiape" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ProcedureManterProjetoCurso" FunctionName="idbufmtModel.Store.ProcedureManterProjetoCurso" />
+    <EntitySetMapping Name="PessoaIDBUFMT">
+      <EntityTypeMapping TypeName="idbufmtModel.PessoaIDBUFMT">
+        <MappingFragment StoreEntitySet="Pessoa">
+          <ScalarProperty Name="titulacaoUID" ColumnName="titulacaoUID" />
+          <ScalarProperty Name="naturalidadeMunicipioUID" ColumnName="naturalidadeMunicipioUID" />
+          <ScalarProperty Name="tipoTitulacaoUID" ColumnName="tipoTitulacaoUID" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="telefoneComercial" ColumnName="telefoneComercial" />
+          <ScalarProperty Name="telefoneSecundario" ColumnName="telefoneSecundario" />
+          <ScalarProperty Name="telefonePrimario" ColumnName="telefonePrimario" />
+          <ScalarProperty Name="enderecoCEP" ColumnName="enderecoCEP" />
+          <ScalarProperty Name="enderecoUF" ColumnName="enderecoUF" />
+          <ScalarProperty Name="enderecoMunicipioUID" ColumnName="enderecoMunicipioUID" />
+          <ScalarProperty Name="enderecoMunicipio" ColumnName="enderecoMunicipio" />
+          <ScalarProperty Name="enderecoBairro" ColumnName="enderecoBairro" />
+          <ScalarProperty Name="enderecoComplemento" ColumnName="enderecoComplemento" />
+          <ScalarProperty Name="enderecoNumero" ColumnName="enderecoNumero" />
+          <ScalarProperty Name="enderecoLogradouro" ColumnName="enderecoLogradouro" />
+          <ScalarProperty Name="tituloEleitorUF" ColumnName="tituloEleitorUF" />
+          <ScalarProperty Name="tituloEleitorDataEmissao" ColumnName="tituloEleitorDataEmissao" />
+          <ScalarProperty Name="tituloEleitorSecao" ColumnName="tituloEleitorSecao" />
+          <ScalarProperty Name="tituloEleitorZona" ColumnName="tituloEleitorZona" />
+          <ScalarProperty Name="tituloEleitor" ColumnName="tituloEleitor" />
+          <ScalarProperty Name="nascimentoPaisUID" ColumnName="nascimentoPaisUID" />
+          <ScalarProperty Name="nacionalidade" ColumnName="nacionalidade" />
+          <ScalarProperty Name="tipoEstadoCivilUID" ColumnName="tipoEstadoCivilUID" />
+          <ScalarProperty Name="rgUF" ColumnName="rgUF" />
+          <ScalarProperty Name="rgDataExpedicao" ColumnName="rgDataExpedicao" />
+          <ScalarProperty Name="rgOrgaoExpedidor" ColumnName="rgOrgaoExpedidor" />
+          <ScalarProperty Name="rg" ColumnName="rg" />
+          <ScalarProperty Name="ctpsUF" ColumnName="ctpsUF" />
+          <ScalarProperty Name="ctpsSerie" ColumnName="ctpsSerie" />
+          <ScalarProperty Name="ctps" ColumnName="ctps" />
+          <ScalarProperty Name="pisPasep" ColumnName="pisPasep" />
+          <ScalarProperty Name="cpf" ColumnName="cpf" />
+          <ScalarProperty Name="nomePai" ColumnName="nomePai" />
+          <ScalarProperty Name="nomeMae" ColumnName="nomeMae" />
+          <ScalarProperty Name="nascimentoData" ColumnName="nascimentoData" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServidorIDBUFMT">
+      <EntityTypeMapping TypeName="idbufmtModel.ServidorIDBUFMT">
+        <MappingFragment StoreEntitySet="Servidor">
+          <ScalarProperty Name="situacaoServidorUID" ColumnName="situacaoServidorUID" />
+          <ScalarProperty Name="situacaoSiape" ColumnName="situacaoSiape" />
+          <ScalarProperty Name="aposentadoriaOpcaoIntegral" ColumnName="aposentadoriaOpcaoIntegral" />
+          <ScalarProperty Name="aposentadoriaAnoPrevisto" ColumnName="aposentadoriaAnoPrevisto" />
+          <ScalarProperty Name="aposentadoriaNumeroProcesso" ColumnName="aposentadoriaNumeroProcesso" />
+          <ScalarProperty Name="unidadeLotacaoUID" ColumnName="unidadeLotacaoUID" />
+          <ScalarProperty Name="cargoReferenciaNivelPadrao" ColumnName="cargoReferenciaNivelPadrao" />
+          <ScalarProperty Name="cargoClasse" ColumnName="cargoClasse" />
+          <ScalarProperty Name="cargoUID" ColumnName="cargoUID" />
+          <ScalarProperty Name="jornadaTrabalhoUID" ColumnName="jornadaTrabalhoUID" />
+          <ScalarProperty Name="regimeJuridico" ColumnName="regimeJuridico" />
+          <ScalarProperty Name="tipoRegistro" ColumnName="tipoRegistro" />
+          <ScalarProperty Name="registroDV" ColumnName="registroDV" />
+          <ScalarProperty Name="registro" ColumnName="registro" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ProcedureManterProjetoDisciplina" FunctionName="idbufmtModel.Store.ProcedureManterProjetoDisciplina" />
+    <EntitySetMapping Name="TipoNecessidadeEspecial">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoNecessidadeEspecial">
+        <MappingFragment StoreEntitySet="TipoNecessidadeEspecial">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="tipoNecessidadeEspecialUID" ColumnName="tipoNecessidadeEspecialUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoOrgaoExpedidorRg">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoOrgaoExpedidorRg">
+        <MappingFragment StoreEntitySet="TipoOrgaoExpedidorRg">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="tipoOrgaoExpedidorRgUID" ColumnName="tipoOrgaoExpedidorRgUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCorpoDocenteMaterialDidaticoEad">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCorpoDocenteMaterialDidaticoEad">
+        <MappingFragment StoreEntitySet="ProjetoCorpoDocenteMaterialDidaticoEad">
+          <ScalarProperty Name="descricaoMaterial" ColumnName="descricaoMaterial" />
+          <ScalarProperty Name="projetoDisciplinaUID" ColumnName="projetoDisciplinaUID" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="projetoCursoComplementoEadUID" ColumnName="projetoCursoComplementoEadUID" />
+          <ScalarProperty Name="projetoCorpoDocenteMaterialDidaticoEadUID" ColumnName="projetoCorpoDocenteMaterialDidaticoEadUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoEstruturaCurricular">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoEstruturaCurricular">
+        <MappingFragment StoreEntitySet="ProjetoEstruturaCurricular">
+          <ScalarProperty Name="dataFim" ColumnName="dataFim" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="cursoUID" ColumnName="cursoUID" />
+          <ScalarProperty Name="estruturaCurricularUID" ColumnName="estruturaCurricularUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoHistorico">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoHistorico">
+        <MappingFragment StoreEntitySet="ProjetoHistorico">
+          <ScalarProperty Name="faltas" ColumnName="faltas" />
+          <ScalarProperty Name="nota" ColumnName="nota" />
+          <ScalarProperty Name="situacaoHistoricoUID" ColumnName="situacaoHistoricoUID" />
+          <ScalarProperty Name="turmaDisciplinaUID" ColumnName="turmaDisciplinaUID" />
+          <ScalarProperty Name="discenteUID" ColumnName="discenteUID" />
+          <ScalarProperty Name="historicoUID" ColumnName="historicoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoHorario">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoHorario">
+        <MappingFragment StoreEntitySet="ProjetoHorario">
+          <ScalarProperty Name="turmaDisciplinaUID" ColumnName="turmaDisciplinaUID" />
+          <ScalarProperty Name="horaFim" ColumnName="horaFim" />
+          <ScalarProperty Name="horaInicio" ColumnName="horaInicio" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="horarioUID" ColumnName="horarioUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoTurmaPolo">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoTurmaPolo">
+        <MappingFragment StoreEntitySet="ProjetoTurmaPolo">
+          <ScalarProperty Name="quantidadeVagas" ColumnName="quantidadeVagas" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+          <ScalarProperty Name="projetoTurmaPoloUID" ColumnName="projetoTurmaPoloUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewPreMatriculaInscricaoOcorrencia">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewPreMatriculaInscricaoOcorrencia">
+        <MappingFragment StoreEntitySet="ViewPreMatriculaInscricaoOcorrencia">
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="tipoSituacaoInscricao" ColumnName="tipoSituacaoInscricao" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+          <ScalarProperty Name="dataHoraOcorrencia" ColumnName="dataHoraOcorrencia" />
+          <ScalarProperty Name="preMatriculaIncricaoOcorrenciaUID" ColumnName="preMatriculaIncricaoOcorrenciaUID" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="preMatriculaPessoaUID" ColumnName="preMatriculaPessoaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewProjetoTurmaPolo">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewProjetoTurmaPolo">
+        <MappingFragment StoreEntitySet="ViewProjetoTurmaPolo">
+          <ScalarProperty Name="quantidadeVagas" ColumnName="quantidadeVagas" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+          <ScalarProperty Name="logradouro" ColumnName="logradouro" />
+          <ScalarProperty Name="bairroEndereco" ColumnName="bairroEndereco" />
+          <ScalarProperty Name="identificacaoEndereco" ColumnName="identificacaoEndereco" />
+          <ScalarProperty Name="tipoUnidadeEnsino" ColumnName="tipoUnidadeEnsino" />
+          <ScalarProperty Name="municipio" ColumnName="municipio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnderecoPoloApoioPresencialEAD">
+      <EntityTypeMapping TypeName="idbufmtModel.EnderecoPoloApoioPresencialEAD">
+        <MappingFragment StoreEntitySet="EnderecoPoloApoioPresencialEAD">
+          <ScalarProperty Name="enderecoUFUID" ColumnName="enderecoUFUID" />
+          <ScalarProperty Name="tipoUnidadeEnsino" ColumnName="tipoUnidadeEnsino" />
+          <ScalarProperty Name="identificacaoEndereco" ColumnName="identificacaoEndereco" />
+          <ScalarProperty Name="site" ColumnName="site" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telefone" ColumnName="telefone" />
+          <ScalarProperty Name="informacoesReferenciaEndereco" ColumnName="informacoesReferenciaEndereco" />
+          <ScalarProperty Name="bairroEndereco" ColumnName="bairroEndereco" />
+          <ScalarProperty Name="complementoBairro" ColumnName="complementoBairro" />
+          <ScalarProperty Name="numeroEndereco" ColumnName="numeroEndereco" />
+          <ScalarProperty Name="logradouro" ColumnName="logradouro" />
+          <ScalarProperty Name="municipioEnderecoUID" ColumnName="municipioEnderecoUID" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewEnderecoPoloEAD">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewEnderecoPoloEAD">
+        <MappingFragment StoreEntitySet="ViewEnderecoPoloEAD">
+          <ScalarProperty Name="municipio" ColumnName="municipio" />
+          <ScalarProperty Name="enderecoUFUID" ColumnName="enderecoUFUID" />
+          <ScalarProperty Name="tipoUnidadeEnsino" ColumnName="tipoUnidadeEnsino" />
+          <ScalarProperty Name="site" ColumnName="site" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telefone" ColumnName="telefone" />
+          <ScalarProperty Name="informacoesReferenciaEndereco" ColumnName="informacoesReferenciaEndereco" />
+          <ScalarProperty Name="bairroEndereco" ColumnName="bairroEndereco" />
+          <ScalarProperty Name="complementoBairro" ColumnName="complementoBairro" />
+          <ScalarProperty Name="numeroEndereco" ColumnName="numeroEndereco" />
+          <ScalarProperty Name="logradouro" ColumnName="logradouro" />
+          <ScalarProperty Name="identificacaoEndereco" ColumnName="identificacaoEndereco" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoEncontroPresencial">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoEncontroPresencial">
+        <MappingFragment StoreEntitySet="ProjetoEncontroPresencial">
+          <ScalarProperty Name="isObrigatorio" ColumnName="isObrigatorio" />
+          <ScalarProperty Name="dataEncontro" ColumnName="dataEncontro" />
+          <ScalarProperty Name="projetoTurmaPoloUID" ColumnName="projetoTurmaPoloUID" />
+          <ScalarProperty Name="projetoDisciplinaUID" ColumnName="projetoDisciplinaUID" />
+          <ScalarProperty Name="projetoEncontroPresencialUID" ColumnName="projetoEncontroPresencialUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewProjetoEncontroPresencial">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewProjetoEncontroPresencial">
+        <MappingFragment StoreEntitySet="ViewProjetoEncontroPresencial">
+          <ScalarProperty Name="nomeDisciplina" ColumnName="nomeDisciplina" />
+          <ScalarProperty Name="projetoDisciplinaUID" ColumnName="projetoDisciplinaUID" />
+          <ScalarProperty Name="nomeTurma" ColumnName="nomeTurma" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+          <ScalarProperty Name="identificacaoEndereco" ColumnName="identificacaoEndereco" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+          <ScalarProperty Name="isObrigatorio" ColumnName="isObrigatorio" />
+          <ScalarProperty Name="dataEncontro" ColumnName="dataEncontro" />
+          <ScalarProperty Name="projetoEncontroPresencialUID" ColumnName="projetoEncontroPresencialUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoFrequencia">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoFrequencia">
+        <MappingFragment StoreEntitySet="ProjetoFrequencia">
+          <ScalarProperty Name="isPresente" ColumnName="isPresente" />
+          <ScalarProperty Name="projetoEncontroPresencialUID" ColumnName="projetoEncontroPresencialUID" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+          <ScalarProperty Name="projetoFrequenciaUID" ColumnName="projetoFrequenciaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoDiscente">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoDiscente">
+        <MappingFragment StoreEntitySet="ProjetoDiscente">
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+          <ScalarProperty Name="tipoReservaVagasUID" ColumnName="tipoReservaVagasUID" />
+          <ScalarProperty Name="tipoPeridoIngressoUID" ColumnName="tipoPeridoIngressoUID" />
+          <ScalarProperty Name="dataIngresso" ColumnName="dataIngresso" />
+          <ScalarProperty Name="tipoFormaIngressoUID" ColumnName="tipoFormaIngressoUID" />
+          <ScalarProperty Name="registro" ColumnName="registro" />
+          <ScalarProperty Name="discenteUID" ColumnName="discenteUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreMatriculaInscricao">
+      <EntityTypeMapping TypeName="idbufmtModel.PreMatriculaInscricao">
+        <MappingFragment StoreEntitySet="PreMatriculaInscricao">
+          <ScalarProperty Name="projetoTurmaPoloUID" ColumnName="projetoTurmaPoloUID" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="tipoSituacaoInscricaoUID" ColumnName="tipoSituacaoInscricaoUID" />
+          <ScalarProperty Name="numeroInscricao" ColumnName="numeroInscricao" />
+          <ScalarProperty Name="preMatriculaPessoaUID" ColumnName="preMatriculaPessoaUID" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewPreMatriculaInscricaoTurma">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewPreMatriculaInscricaoTurma">
+        <MappingFragment StoreEntitySet="ViewPreMatriculaInscricaoTurma">
+          <ScalarProperty Name="identificacaoEndereco" ColumnName="identificacaoEndereco" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+          <ScalarProperty Name="projetoTurmaPoloUID" ColumnName="projetoTurmaPoloUID" />
+          <ScalarProperty Name="tipoSituacaoInscricaoUID" ColumnName="tipoSituacaoInscricaoUID" />
+          <ScalarProperty Name="tipoSituacaoInscricao" ColumnName="tipoSituacaoInscricao" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="RGA" ColumnName="RGA" />
+          <ScalarProperty Name="projetoDiscenteUID" ColumnName="projetoDiscenteUID" />
+          <ScalarProperty Name="preMatriculaPessoaUID" ColumnName="preMatriculaPessoaUID" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoTurmaDisciplina">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoTurmaDisciplina">
+        <MappingFragment StoreEntitySet="ProjetoTurmaDisciplina">
+          <ScalarProperty Name="dataTermino" ColumnName="dataTermino" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="descricaoOutrosTiposRemuneracaoSecundario" ColumnName="descricaoOutrosTiposRemuneracaoSecundario" />
+          <ScalarProperty Name="descricaoOutrosTiposRemuneracaoPrincipal" ColumnName="descricaoOutrosTiposRemuneracaoPrincipal" />
+          <ScalarProperty Name="tipoRemuneracaoDocenteSecundario" ColumnName="tipoRemuneracaoDocenteSecundario" />
+          <ScalarProperty Name="tipoRemuneracaoDocentePrincipal" ColumnName="tipoRemuneracaoDocentePrincipal" />
+          <ScalarProperty Name="possuiRemuneracaoDocenteSecundario" ColumnName="possuiRemuneracaoDocenteSecundario" />
+          <ScalarProperty Name="possuiRemuneracaoDocentePrincipal" ColumnName="possuiRemuneracaoDocentePrincipal" />
+          <ScalarProperty Name="projetoCorpoDocenteSecundarioUID" ColumnName="projetoCorpoDocenteSecundarioUID" />
+          <ScalarProperty Name="cargaHorariaSemanal" ColumnName="cargaHorariaSemanal" />
+          <ScalarProperty Name="projetoCorpoDocenteUID" ColumnName="projetoCorpoDocenteUID" />
+          <ScalarProperty Name="projetoDisciplinaUID" ColumnName="projetoDisciplinaUID" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+          <ScalarProperty Name="projetoTurmaDisciplinaUID" ColumnName="projetoTurmaDisciplinaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoTitulacao">
+      <EntityTypeMapping TypeName="idbufmtModel.TipoTitulacao">
+        <MappingFragment StoreEntitySet="TipoTitulacao">
+          <ScalarProperty Name="titulacaoSiape" ColumnName="titulacaoSiape" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="tipoTitulacaoUID" ColumnName="tipoTitulacaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewProjetoDocente">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewProjetoDocente">
+        <MappingFragment StoreEntitySet="ViewProjetoDocente">
+          <ScalarProperty Name="titulacao" ColumnName="titulacao" />
+          <ScalarProperty Name="registroDV" ColumnName="registroDV" />
+          <ScalarProperty Name="registro" ColumnName="registro" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="projetoCorpoDocenteUID" ColumnName="projetoCorpoDocenteUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoTipoGraduacao">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoTipoGraduacao">
+        <MappingFragment StoreEntitySet="ProjetoTipoGraduacao">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="projetoTipoGraduacaoUID" ColumnName="projetoTipoGraduacaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoDisciplina">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoDisciplina">
+        <MappingFragment StoreEntitySet="ProjetoDisciplina">
+          <ScalarProperty Name="tipoDisciplina" ColumnName="tipoDisciplina" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="bibliografia" ColumnName="bibliografia" />
+          <ScalarProperty Name="ementa" ColumnName="ementa" />
+          <ScalarProperty Name="cargaHoraria" ColumnName="cargaHoraria" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="projetoDisciplinaUID" ColumnName="projetoDisciplinaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoNota">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoNota">
+        <MappingFragment StoreEntitySet="ProjetoNota">
+          <ScalarProperty Name="descricaoTCC" ColumnName="descricaoTCC" />
+          <ScalarProperty Name="conceito" ColumnName="conceito" />
+          <ScalarProperty Name="nota" ColumnName="nota" />
+          <ScalarProperty Name="projetoDisciplinaUID" ColumnName="projetoDisciplinaUID" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+          <ScalarProperty Name="projetoNotaUID" ColumnName="projetoNotaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewDocenteUFMT">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewDocenteUFMT">
+        <MappingFragment StoreEntitySet="ViewDocenteUFMT">
+          <ScalarProperty Name="nomeTitulacao" ColumnName="nomeTitulacao" />
+          <ScalarProperty Name="tipoTitulacaoUID" ColumnName="tipoTitulacaoUID" />
+          <ScalarProperty Name="nomeCargo" ColumnName="nomeCargo" />
+          <ScalarProperty Name="cargoUID" ColumnName="cargoUID" />
+          <ScalarProperty Name="siapeDV" ColumnName="siapeDV" />
+          <ScalarProperty Name="siape" ColumnName="siape" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCorpoDocente">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCorpoDocente">
+        <MappingFragment StoreEntitySet="ProjetoCorpoDocente">
+          <ScalarProperty Name="orgaoExpedidorUFUID" ColumnName="orgaoExpedidorUFUID" />
+          <ScalarProperty Name="orgaoExpedidorUID" ColumnName="orgaoExpedidorUID" />
+          <ScalarProperty Name="tipoTitulacaoUID" ColumnName="tipoTitulacaoUID" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="telefoneFixo" ColumnName="telefoneFixo" />
+          <ScalarProperty Name="dataExpedicao" ColumnName="dataExpedicao" />
+          <ScalarProperty Name="rg" ColumnName="rg" />
+          <ScalarProperty Name="cpf" ColumnName="cpf" />
+          <ScalarProperty Name="nomePai" ColumnName="nomePai" />
+          <ScalarProperty Name="nomeMae" ColumnName="nomeMae" />
+          <ScalarProperty Name="dataNascimento" ColumnName="dataNascimento" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="projetoCorpoDocenteUID" ColumnName="projetoCorpoDocenteUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permissao">
+      <EntityTypeMapping TypeName="idbufmtModel.Permissao">
+        <MappingFragment StoreEntitySet="Permissao">
+          <ScalarProperty Name="urlRelativa" ColumnName="urlRelativa" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="aplicacaoUID" ColumnName="aplicacaoUID" />
+          <ScalarProperty Name="permissaoUID" ColumnName="permissaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoPermissaoRecurso">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoPermissaoRecurso">
+        <MappingFragment StoreEntitySet="ProjetoPermissaoRecurso">
+          <ScalarProperty Name="projetoRecursoUID" ColumnName="projetoRecursoUID" />
+          <ScalarProperty Name="permissaoUID" ColumnName="permissaoUID" />
+          <ScalarProperty Name="projetoPermissaoRecursoUID" ColumnName="projetoPermissaoRecursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoRecurso">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoRecurso">
+        <MappingFragment StoreEntitySet="ProjetoRecurso">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="projetoRecursoUID" ColumnName="projetoRecursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreMatriculaInscricaoOcorrencia">
+      <EntityTypeMapping TypeName="idbufmtModel.PreMatriculaInscricaoOcorrencia">
+        <MappingFragment StoreEntitySet="PreMatriculaInscricaoOcorrencia">
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="tipoReservaVagasUID" ColumnName="tipoReservaVagasUID" />
+          <ScalarProperty Name="tipoPeriodoIngressoUID" ColumnName="tipoPeriodoIngressoUID" />
+          <ScalarProperty Name="dataIngresso" ColumnName="dataIngresso" />
+          <ScalarProperty Name="tipoFormaIngressoUID" ColumnName="tipoFormaIngressoUID" />
+          <ScalarProperty Name="usuarioUID" ColumnName="usuarioUID" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+          <ScalarProperty Name="dataHoraOcorrencia" ColumnName="dataHoraOcorrencia" />
+          <ScalarProperty Name="tipoSituacaoInscricaoUID" ColumnName="tipoSituacaoInscricaoUID" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+          <ScalarProperty Name="preMatriculaIncricaoOcorrenciaUID" ColumnName="preMatriculaIncricaoOcorrenciaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoFrequenciaHistorico">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoFrequenciaHistorico">
+        <MappingFragment StoreEntitySet="ProjetoFrequenciaHistorico">
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="usuarioUID" ColumnName="usuarioUID" />
+          <ScalarProperty Name="isPresente" ColumnName="isPresente" />
+          <ScalarProperty Name="projetoFrequenciaUID" ColumnName="projetoFrequenciaUID" />
+          <ScalarProperty Name="projetoFrequenciaHistoricoUID" ColumnName="projetoFrequenciaHistoricoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoNotaHistorico">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoNotaHistorico">
+        <MappingFragment StoreEntitySet="ProjetoNotaHistorico">
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="usuarioUID" ColumnName="usuarioUID" />
+          <ScalarProperty Name="descricaoTCC" ColumnName="descricaoTCC" />
+          <ScalarProperty Name="conceito" ColumnName="conceito" />
+          <ScalarProperty Name="nota" ColumnName="nota" />
+          <ScalarProperty Name="projetoNotaUID" ColumnName="projetoNotaUID" />
+          <ScalarProperty Name="projetoNotaHistoricoUID" ColumnName="projetoNotaHistoricoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoTurma">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoTurma">
+        <MappingFragment StoreEntitySet="ProjetoTurma">
+          <ScalarProperty Name="isAtivo" ColumnName="isAtivo" />
+          <ScalarProperty Name="DataFim" ColumnName="DataFim" />
+          <ScalarProperty Name="DataInicio" ColumnName="DataInicio" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="turno" ColumnName="turno" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="ano" ColumnName="ano" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewProjetoCursoTurma">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewProjetoCursoTurma">
+        <MappingFragment StoreEntitySet="ViewProjetoCursoTurma">
+          <ScalarProperty Name="isTurmaAtiva" ColumnName="isTurmaAtiva" />
+          <ScalarProperty Name="dataFimTurma" ColumnName="dataFimTurma" />
+          <ScalarProperty Name="dataInicioTurma" ColumnName="dataInicioTurma" />
+          <ScalarProperty Name="descricaoTurma" ColumnName="descricaoTurma" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+          <ScalarProperty Name="nomeCurso" ColumnName="nomeCurso" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoPreInscricao">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoPreInscricao">
+        <MappingFragment StoreEntitySet="ProjetoPreInscricao">
+          <ScalarProperty Name="ipUsuarioAtuacao" ColumnName="ipUsuarioAtuacao" />
+          <ScalarProperty Name="usuarioAtuacaoUID" ColumnName="usuarioAtuacaoUID" />
+          <ScalarProperty Name="dataAtuacao" ColumnName="dataAtuacao" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+          <ScalarProperty Name="dataSolicitacao" ColumnName="dataSolicitacao" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+          <ScalarProperty Name="situacaoPreInscricaoEnum" ColumnName="situacaoPreInscricaoEnum" />
+          <ScalarProperty Name="preMatriculaPessoaUID" ColumnName="preMatriculaPessoaUID" />
+          <ScalarProperty Name="projetoPreInscricaoUID" ColumnName="projetoPreInscricaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewPreMatriculaInscricao">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewPreMatriculaInscricao">
+        <MappingFragment StoreEntitySet="ViewPreMatriculaInscricao">
+          <ScalarProperty Name="identificacaoEndereco" ColumnName="identificacaoEndereco" />
+          <ScalarProperty Name="enderecoUID" ColumnName="enderecoUID" />
+          <ScalarProperty Name="municipio" ColumnName="municipio" />
+          <ScalarProperty Name="cursoNome" ColumnName="cursoNome" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+          <ScalarProperty Name="quantidadeVagas" ColumnName="quantidadeVagas" />
+          <ScalarProperty Name="projetoTurmaPoloUID" ColumnName="projetoTurmaPoloUID" />
+          <ScalarProperty Name="projetoTurmaDataFim" ColumnName="projetoTurmaDataFim" />
+          <ScalarProperty Name="projetoTurmaDataInicio" ColumnName="projetoTurmaDataInicio" />
+          <ScalarProperty Name="isTurmaAtiva" ColumnName="isTurmaAtiva" />
+          <ScalarProperty Name="descricaoTurma" ColumnName="descricaoTurma" />
+          <ScalarProperty Name="projetoTurmaUID" ColumnName="projetoTurmaUID" />
+          <ScalarProperty Name="RGA" ColumnName="RGA" />
+          <ScalarProperty Name="discenteUID" ColumnName="discenteUID" />
+          <ScalarProperty Name="tipoSituacaoInscricaoNome" ColumnName="tipoSituacaoInscricaoNome" />
+          <ScalarProperty Name="tipoSituacaoInscricaoUID" ColumnName="tipoSituacaoInscricaoUID" />
+          <ScalarProperty Name="dataHoraUltimaAtualizacao" ColumnName="dataHoraUltimaAtualizacao" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="cpf" ColumnName="cpf" />
+          <ScalarProperty Name="pessoaNome" ColumnName="pessoaNome" />
+          <ScalarProperty Name="numeroInscricao" ColumnName="numeroInscricao" />
+          <ScalarProperty Name="preMatriculaPessoaUID" ColumnName="preMatriculaPessoaUID" />
+          <ScalarProperty Name="preMatriculaInscricaoUID" ColumnName="preMatriculaInscricaoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PermissaoUsuario">
+      <EntityTypeMapping TypeName="idbufmtModel.PermissaoUsuario">
+        <MappingFragment StoreEntitySet="PermissaoUsuario">
+          <ScalarProperty Name="dataLimite" ColumnName="dataLimite" />
+          <ScalarProperty Name="permissaoUID" ColumnName="permissaoUID" />
+          <ScalarProperty Name="usuarioUID" ColumnName="usuarioUID" />
+          <ScalarProperty Name="permissaoUsuarioUID" ColumnName="permissaoUsuarioUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="idbufmtModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="dataAcessoBloqueado" ColumnName="dataAcessoBloqueado" />
+          <ScalarProperty Name="dataProximaTrocaSenha" ColumnName="dataProximaTrocaSenha" />
+          <ScalarProperty Name="dataUltimoAcesso" ColumnName="dataUltimoAcesso" />
+          <ScalarProperty Name="bloqueado" ColumnName="bloqueado" />
+          <ScalarProperty Name="senhaAcesso" ColumnName="senhaAcesso" />
+          <ScalarProperty Name="nomeAcesso" ColumnName="nomeAcesso" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+          <ScalarProperty Name="usuarioUID" ColumnName="usuarioUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoUsuarioUnidade">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoUsuarioUnidade">
+        <MappingFragment StoreEntitySet="ProjetoUsuarioUnidade">
+          <ScalarProperty Name="unidadeUID" ColumnName="unidadeUID" />
+          <ScalarProperty Name="usuarioUID" ColumnName="usuarioUID" />
+          <ScalarProperty Name="projetoUsuarioUnidadeUID" ColumnName="projetoUsuarioUnidadeUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewCoordenadorUFMT">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewCoordenadorUFMT">
+        <MappingFragment StoreEntitySet="ViewCoordenadorUFMT">
+          <ScalarProperty Name="nomeTitulacao" ColumnName="nomeTitulacao" />
+          <ScalarProperty Name="tipoTitulacaoUID" ColumnName="tipoTitulacaoUID" />
+          <ScalarProperty Name="siapeDV" ColumnName="siapeDV" />
+          <ScalarProperty Name="siape" ColumnName="siape" />
+          <ScalarProperty Name="servidorUID" ColumnName="servidorUID" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="pessoaUID" ColumnName="pessoaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoCurso">
+      <EntityTypeMapping TypeName="idbufmtModel.ProjetoCurso">
+        <MappingFragment StoreEntitySet="ProjetoCurso">
+          <ScalarProperty Name="codigoEMEC" ColumnName="codigoEMEC" />
+          <ScalarProperty Name="dataCriacao" ColumnName="dataCriacao" />
+          <ScalarProperty Name="usuarioCriacaoUID" ColumnName="usuarioCriacaoUID" />
+          <ScalarProperty Name="emailSecretario" ColumnName="emailSecretario" />
+          <ScalarProperty Name="celularSecretario" ColumnName="celularSecretario" />
+          <ScalarProperty Name="secretarioUID" ColumnName="secretarioUID" />
+          <ScalarProperty Name="descricaoAva" ColumnName="descricaoAva" />
+          <ScalarProperty Name="CNPqSubAreaConhecimentoUID" ColumnName="CNPqSubAreaConhecimentoUID" />
+          <ScalarProperty Name="finalizado" ColumnName="finalizado" />
+          <ScalarProperty Name="informacoesReferenciaEndereco" ColumnName="informacoesReferenciaEndereco" />
+          <ScalarProperty Name="bairroEndereco" ColumnName="bairroEndereco" />
+          <ScalarProperty Name="complementoBairro" ColumnName="complementoBairro" />
+          <ScalarProperty Name="numeroEndereco" ColumnName="numeroEndereco" />
+          <ScalarProperty Name="identificacaoEndereco" ColumnName="identificacaoEndereco" />
+          <ScalarProperty Name="municipioEnderecoUID" ColumnName="municipioEnderecoUID" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="sigaCodCurso" ColumnName="sigaCodCurso" />
+          <ScalarProperty Name="VinculoCursoGraduacao" ColumnName="VinculoCursoGraduacao" />
+          <ScalarProperty Name="documentoRealizacaoCurso" ColumnName="documentoRealizacaoCurso" />
+          <ScalarProperty Name="dataDocumentoRealizacaoCurso" ColumnName="dataDocumentoRealizacaoCurso" />
+          <ScalarProperty Name="quantidadeVagas" ColumnName="quantidadeVagas" />
+          <ScalarProperty Name="quantidadeEgresso" ColumnName="quantidadeEgresso" />
+          <ScalarProperty Name="planoAplicacaoSuperavit" ColumnName="planoAplicacaoSuperavit" />
+          <ScalarProperty Name="tipoGestaoFinanceiraUID" ColumnName="tipoGestaoFinanceiraUID" />
+          <ScalarProperty Name="tipoFinanciamentoUID" ColumnName="tipoFinanciamentoUID" />
+          <ScalarProperty Name="termoConvenio" ColumnName="termoConvenio" />
+          <ScalarProperty Name="financiamentoCurso" ColumnName="financiamentoCurso" />
+          <ScalarProperty Name="frequenciaMinimaAprovacao" ColumnName="frequenciaMinimaAprovacao" />
+          <ScalarProperty Name="notaMinimaAprovacao" ColumnName="notaMinimaAprovacao" />
+          <ScalarProperty Name="caracteristicasMonografiaTcc" ColumnName="caracteristicasMonografiaTcc" />
+          <ScalarProperty Name="formasAvaliacao" ColumnName="formasAvaliacao" />
+          <ScalarProperty Name="minutaEdital" ColumnName="minutaEdital" />
+          <ScalarProperty Name="objetivosCurso" ColumnName="objetivosCurso" />
+          <ScalarProperty Name="justificativaCurso" ColumnName="justificativaCurso" />
+          <ScalarProperty Name="descricaoMaterialBibliografico" ColumnName="descricaoMaterialBibliografico" />
+          <ScalarProperty Name="descricaoEquipamentos" ColumnName="descricaoEquipamentos" />
+          <ScalarProperty Name="descricaoInstalacoes" ColumnName="descricaoInstalacoes" />
+          <ScalarProperty Name="publicoAlvo" ColumnName="publicoAlvo" />
+          <ScalarProperty Name="nomeCursoModular" ColumnName="nomeCursoModular" />
+          <ScalarProperty Name="cargaHorariaModular" ColumnName="cargaHorariaModular" />
+          <ScalarProperty Name="cargaHorariaDiario" ColumnName="cargaHorariaDiario" />
+          <ScalarProperty Name="periodicidadeUID" ColumnName="periodicidadeUID" />
+          <ScalarProperty Name="turnoOfertaUID" ColumnName="turnoOfertaUID" />
+          <ScalarProperty Name="cargaHorariaTotal" ColumnName="cargaHorariaTotal" />
+          <ScalarProperty Name="realizacaoDataTermino" ColumnName="realizacaoDataTermino" />
+          <ScalarProperty Name="realizacaoDataInicio" ColumnName="realizacaoDataInicio" />
+          <ScalarProperty Name="emailViceCoordenador" ColumnName="emailViceCoordenador" />
+          <ScalarProperty Name="telefoneCelularViceCoordenador" ColumnName="telefoneCelularViceCoordenador" />
+          <ScalarProperty Name="telefoneResidencialViceCoordenador" ColumnName="telefoneResidencialViceCoordenador" />
+          <ScalarProperty Name="regimeTrabalhoViceCoordenadorUID" ColumnName="regimeTrabalhoViceCoordenadorUID" />
+          <ScalarProperty Name="titulacaoViceCoordenadorUID" ColumnName="titulacaoViceCoordenadorUID" />
+          <ScalarProperty Name="viceCoordenadorServidorUID" ColumnName="viceCoordenadorServidorUID" />
+          <ScalarProperty Name="emailCoordenador" ColumnName="emailCoordenador" />
+          <ScalarProperty Name="telefoneCelularCoordenador" ColumnName="telefoneCelularCoordenador" />
+          <ScalarProperty Name="telefoneResidencialCoordenador" ColumnName="telefoneResidencialCoordenador" />
+          <ScalarProperty Name="regimeTrabalhoCoordenadorUID" ColumnName="regimeTrabalhoCoordenadorUID" />
+          <ScalarProperty Name="titulacaoCoordenadorUID" ColumnName="titulacaoCoordenadorUID" />
+          <ScalarProperty Name="coordenadorServidorUID" ColumnName="coordenadorServidorUID" />
+          <ScalarProperty Name="siteCurso" ColumnName="siteCurso" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telefone" ColumnName="telefone" />
+          <ScalarProperty Name="proponenteUnidadeUID" ColumnName="proponenteUnidadeUID" />
+          <ScalarProperty Name="CNPqAreaConhecimentoUID" ColumnName="CNPqAreaConhecimentoUID" />
+          <ScalarProperty Name="nomeCurso" ColumnName="nomeCurso" />
+          <ScalarProperty Name="tipoModalidadeUID" ColumnName="tipoModalidadeUID" />
+          <ScalarProperty Name="codigoProjetoCurso" ColumnName="codigoProjetoCurso" />
+          <ScalarProperty Name="projetoCursoUID" ColumnName="projetoCursoUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PreMatriculaPessoa">
+      <EntityTypeMapping TypeName="idbufmtModel.PreMatriculaPessoa">
+        <MappingFragment StoreEntitySet="PreMatriculaPessoa">
+          <ScalarProperty Name="graduacaoInstituicaoEnsinoUID" ColumnName="graduacaoInstituicaoEnsinoUID" />
+          <ScalarProperty Name="emailComercial" ColumnName="emailComercial" />
+          <ScalarProperty Name="celularComercial" ColumnName="celularComercial" />
+          <ScalarProperty Name="localTrabalho" ColumnName="localTrabalho" />
+          <ScalarProperty Name="profissao" ColumnName="profissao" />
+          <ScalarProperty Name="tituloEleitoralMunicipioUID" ColumnName="tituloEleitoralMunicipioUID" />
+          <ScalarProperty Name="tituloEleitoralUFUID" ColumnName="tituloEleitoralUFUID" />
+          <ScalarProperty Name="zona" ColumnName="zona" />
+          <ScalarProperty Name="tituloEleitoral" ColumnName="tituloEleitoral" />
+          <ScalarProperty Name="passaporte" ColumnName="passaporte" />
+          <ScalarProperty Name="numeroRegistroDiploma" ColumnName="numeroRegistroDiploma" />
+          <ScalarProperty Name="cursoGraduacao" ColumnName="cursoGraduacao" />
+          <ScalarProperty Name="projetoTipoGraduacaoUID" ColumnName="projetoTipoGraduacaoUID" />
+          <ScalarProperty Name="dataValidadeChave" ColumnName="dataValidadeChave" />
+          <ScalarProperty Name="chaveRecuperacaoSenha" ColumnName="chaveRecuperacaoSenha" />
+          <ScalarProperty Name="emailConfirmado" ColumnName="emailConfirmado" />
+          <ScalarProperty Name="chaveValidacaoCadastro" ColumnName="chaveValidacaoCadastro" />
+          <ScalarProperty Name="naturalidadeUFUID" ColumnName="naturalidadeUFUID" />
+          <ScalarProperty Name="graduacaoUFUID" ColumnName="graduacaoUFUID" />
+          <ScalarProperty Name="enderecoUFUID" ColumnName="enderecoUFUID" />
+          <ScalarProperty Name="senha" ColumnName="senha" />
+          <ScalarProperty Name="dataHoraUltimaAtualizacao" ColumnName="dataHoraUltimaAtualizacao" />
+          <ScalarProperty Name="dataHoraCadastro" ColumnName="dataHoraCadastro" />
+          <ScalarProperty Name="tipoCorRacaUID" ColumnName="tipoCorRacaUID" />
+          <ScalarProperty Name="tipoFaixaRendaFamiliarUID" ColumnName="tipoFaixaRendaFamiliarUID" />
+          <ScalarProperty Name="numeroRegistroApostilaRevalidacao" ColumnName="numeroRegistroApostilaRevalidacao" />
+          <ScalarProperty Name="diplomaGraduacaoExterior" ColumnName="diplomaGraduacaoExterior" />
+          <ScalarProperty Name="graduacaoDataColacaoGrau" ColumnName="graduacaoDataColacaoGrau" />
+          <ScalarProperty Name="telefoneComercial" ColumnName="telefoneComercial" />
+          <ScalarProperty Name="telefoneMovel" ColumnName="telefoneMovel" />
+          <ScalarProperty Name="telefoneFixo" ColumnName="telefoneFixo" />
+          <ScalarProperty Name="enderecoMunicipioUID" ColumnName="enderecoMunicipioUID" />
+          <ScalarProperty Name="enderecoCEP" ColumnName="enderecoCEP" />
+          <ScalarProperty Name="enderecoBairro" ColumnName="enderecoBairro" />
+          <ScalarProperty Name="enderecoComplemento" ColumnName="enderecoComplemento" />
+          <ScalarProperty Name="enderecoNumero" ColumnName="enderecoNumero" />
+          <ScalarProperty Name="enderecoLogradouro" ColumnName="enderecoLogradouro" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="naturalidadeMunicipioUID" ColumnName="naturalidadeMunicipioUID" />
+          <ScalarProperty Name="nascimentoPaisUID" ColumnName="nascimentoPaisUID" />
+          <ScalarProperty Name="nacionalidade" ColumnName="nacionalidade" />
+          <ScalarProperty Name="tipoEstadoCivilUID" ColumnName="tipoEstadoCivilUID" />
+          <ScalarProperty Name="rgDataExpedicao" ColumnName="rgDataExpedicao" />
+          <ScalarProperty Name="rgOrgaoExpedidor" ColumnName="rgOrgaoExpedidor" />
+          <ScalarProperty Name="rgUFUID" ColumnName="rgUFUID" />
+          <ScalarProperty Name="rgNumero" ColumnName="rgNumero" />
+          <ScalarProperty Name="cpf" ColumnName="cpf" />
+          <ScalarProperty Name="nomePai" ColumnName="nomePai" />
+          <ScalarProperty Name="nomeMae" ColumnName="nomeMae" />
+          <ScalarProperty Name="nascimentoData" ColumnName="nascimentoData" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="preMatriculaPessoaUID" ColumnName="preMatriculaPessoaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViewPreMatriculaPessoa">
+      <EntityTypeMapping TypeName="idbufmtModel.ViewPreMatriculaPessoa">
+        <MappingFragment StoreEntitySet="ViewPreMatriculaPessoa">
+          <ScalarProperty Name="tipoGraduacao" ColumnName="tipoGraduacao" />
+          <ScalarProperty Name="projetoTipoGraduacaoUID" ColumnName="projetoTipoGraduacaoUID" />
+          <ScalarProperty Name="senha" ColumnName="senha" />
+          <ScalarProperty Name="graduacaoInstituicaoEnsino" ColumnName="graduacaoInstituicaoEnsino" />
+          <ScalarProperty Name="enderecoNomeMunicipio" ColumnName="enderecoNomeMunicipio" />
+          <ScalarProperty Name="graduacaoUfInstituicaoEnsino" ColumnName="graduacaoUfInstituicaoEnsino" />
+          <ScalarProperty Name="naturalidadeNomeMunicipio" ColumnName="naturalidadeNomeMunicipio" />
+          <ScalarProperty Name="nomeNascimentoPais" ColumnName="nomeNascimentoPais" />
+          <ScalarProperty Name="nomeTipoEstadoCivil" ColumnName="nomeTipoEstadoCivil" />
+          <ScalarProperty Name="emailComercial" ColumnName="emailComercial" />
+          <ScalarProperty Name="celularComercial" ColumnName="celularComercial" />
+          <ScalarProperty Name="telefoneComercial" ColumnName="telefoneComercial" />
+          <ScalarProperty Name="localTrabalho" ColumnName="localTrabalho" />
+          <ScalarProperty Name="profissao" ColumnName="profissao" />
+          <ScalarProperty Name="passaporte" ColumnName="passaporte" />
+          <ScalarProperty Name="tituloEleitoralMunicipioUID" ColumnName="tituloEleitoralMunicipioUID" />
+          <ScalarProperty Name="tituloEleitoralUFUID" ColumnName="tituloEleitoralUFUID" />
+          <ScalarProperty Name="zona" ColumnName="zona" />
+          <ScalarProperty Name="tituloEleitoral" ColumnName="tituloEleitoral" />
+          <ScalarProperty Name="numeroRegistroDiploma" ColumnName="numeroRegistroDiploma" />
+          <ScalarProperty Name="cursoGraduacao" ColumnName="cursoGraduacao" />
+          <ScalarProperty Name="dataHoraUltimaAtualizacao" ColumnName="dataHoraUltimaAtualizacao" />
+          <ScalarProperty Name="dataHoraCadastro" ColumnName="dataHoraCadastro" />
+          <ScalarProperty Name="tipoCorRacaUID" ColumnName="tipoCorRacaUID" />
+          <ScalarProperty Name="tipoFaixaRendaFamiliarUID" ColumnName="tipoFaixaRendaFamiliarUID" />
+          <ScalarProperty Name="graduacaoDataColacaoGrau" ColumnName="graduacaoDataColacaoGrau" />
+          <ScalarProperty Name="graduacaoInstituicaoEnsinoUID" ColumnName="graduacaoInstituicaoEnsinoUID" />
+          <ScalarProperty Name="numeroRegistroApostilaRevalidacao" ColumnName="numeroRegistroApostilaRevalidacao" />
+          <ScalarProperty Name="diplomaGraduacaoExterior" ColumnName="diplomaGraduacaoExterior" />
+          <ScalarProperty Name="telefoneMovel" ColumnName="telefoneMovel" />
+          <ScalarProperty Name="telefoneFixo" ColumnName="telefoneFixo" />
+          <ScalarProperty Name="naturalidadeUFUID" ColumnName="naturalidadeUFUID" />
+          <ScalarProperty Name="graduacaoUFUID" ColumnName="graduacaoUFUID" />
+          <ScalarProperty Name="enderecoUFUID" ColumnName="enderecoUFUID" />
+          <ScalarProperty Name="enderecoMunicipioUID" ColumnName="enderecoMunicipioUID" />
+          <ScalarProperty Name="enderecoCEP" ColumnName="enderecoCEP" />
+          <ScalarProperty Name="enderecoBairro" ColumnName="enderecoBairro" />
+          <ScalarProperty Name="enderecoComplemento" ColumnName="enderecoComplemento" />
+          <ScalarProperty Name="enderecoNumero" ColumnName="enderecoNumero" />
+          <ScalarProperty Name="enderecoLogradouro" ColumnName="enderecoLogradouro" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="naturalidadeMunicipioUID" ColumnName="naturalidadeMunicipioUID" />
+          <ScalarProperty Name="nascimentoPaisUID" ColumnName="nascimentoPaisUID" />
+          <ScalarProperty Name="nacionalidade" ColumnName="nacionalidade" />
+          <ScalarProperty Name="tipoEstadoCivilUID" ColumnName="tipoEstadoCivilUID" />
+          <ScalarProperty Name="rgDataExpedicao" ColumnName="rgDataExpedicao" />
+          <ScalarProperty Name="rgOrgaoExpedidor" ColumnName="rgOrgaoExpedidor" />
+          <ScalarProperty Name="rgUFUID" ColumnName="rgUFUID" />
+          <ScalarProperty Name="rgNumero" ColumnName="rgNumero" />
+          <ScalarProperty Name="cpf" ColumnName="cpf" />
+          <ScalarProperty Name="nomePai" ColumnName="nomePai" />
+          <ScalarProperty Name="nomeMae" ColumnName="nomeMae" />
+          <ScalarProperty Name="nascimentoData" ColumnName="nascimentoData" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="nomeCandidato" ColumnName="nomeCandidato" />
+          <ScalarProperty Name="preMatriculaPessoaUID" ColumnName="preMatriculaPessoaUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

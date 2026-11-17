@@ -1,0 +1,141 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ufmt.sig</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net35</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ufmt.sig.entity.mapping.TipoNecessidadeEspecial.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.PerfilUsuario.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.SubCategoria.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.TecnologiaAssistiva.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.sisvote.TipoVoto.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.sisvote.Cargo.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.TipoTitulacao.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Unidade.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.cineclube.Genero.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.EncargoServidor.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.Categoria.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.sisvote.Voto.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Servidor.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.HomologacaoPia.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Permissao.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Campus.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Municipio.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Usuario.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.OcorrenciaServidor.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.CoordenadorCurso.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncional.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.TipoTecnologiaAssistiva.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncionalToItem.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.Item.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.Ocorrencia.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.sge.UnidadeAlocadora.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.PermissaoPerfil.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.Campos.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.NecessidadeEspecial.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.SituacaoServidor.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.MatrizCurricular.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.JornadaTrabalho.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.cineclube.Filme.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Uf.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.sisvote.Candidato.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.MatrizDisciplinar.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Cargo.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.TipoOcorrenciaServidor.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.TipoEncargoServidor.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.PermissaoUsuario.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Afastamento.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.ResponsavelUnidade.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.InstituicaoConvenio.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.Metrica.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.ItemToCampos.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Curso.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Aplicacao.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.AlocacaoDisciplinar.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.cineclube.Agenda.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.ConfirmaEmail.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.sisvote.Eleicao.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Log.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Perfil.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncionalToItemToCampos.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.PlanoPedagogico.hbm.xml" />
+    <None Remove="ufmt.sig.entity.mapping.Pessoa.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.TipoNecessidadeEspecial.hbm.xml" LogicalName="ufmt.sig.entity.mapping.TipoNecessidadeEspecial.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.PerfilUsuario.hbm.xml" LogicalName="ufmt.sig.entity.mapping.PerfilUsuario.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.SubCategoria.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.SubCategoria.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.TecnologiaAssistiva.hbm.xml" LogicalName="ufmt.sig.entity.mapping.TecnologiaAssistiva.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.sisvote.TipoVoto.hbm.xml" LogicalName="ufmt.sig.entity.mapping.sisvote.TipoVoto.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.sisvote.Cargo.hbm.xml" LogicalName="ufmt.sig.entity.mapping.sisvote.Cargo.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.TipoTitulacao.hbm.xml" LogicalName="ufmt.sig.entity.mapping.TipoTitulacao.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Unidade.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Unidade.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.cineclube.Genero.hbm.xml" LogicalName="ufmt.sig.entity.mapping.cineclube.Genero.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.EncargoServidor.hbm.xml" LogicalName="ufmt.sig.entity.mapping.EncargoServidor.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.Categoria.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.Categoria.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.sisvote.Voto.hbm.xml" LogicalName="ufmt.sig.entity.mapping.sisvote.Voto.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Servidor.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Servidor.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.HomologacaoPia.hbm.xml" LogicalName="ufmt.sig.entity.mapping.HomologacaoPia.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Permissao.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Permissao.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Campus.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Campus.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Municipio.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Municipio.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Usuario.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Usuario.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.OcorrenciaServidor.hbm.xml" LogicalName="ufmt.sig.entity.mapping.OcorrenciaServidor.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.CoordenadorCurso.hbm.xml" LogicalName="ufmt.sig.entity.mapping.CoordenadorCurso.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncional.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncional.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.TipoTecnologiaAssistiva.hbm.xml" LogicalName="ufmt.sig.entity.mapping.TipoTecnologiaAssistiva.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncionalToItem.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncionalToItem.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.Item.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.Item.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.Ocorrencia.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.Ocorrencia.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.sge.UnidadeAlocadora.hbm.xml" LogicalName="ufmt.sig.entity.mapping.sge.UnidadeAlocadora.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.PermissaoPerfil.hbm.xml" LogicalName="ufmt.sig.entity.mapping.PermissaoPerfil.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.Campos.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.Campos.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.NecessidadeEspecial.hbm.xml" LogicalName="ufmt.sig.entity.mapping.NecessidadeEspecial.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.SituacaoServidor.hbm.xml" LogicalName="ufmt.sig.entity.mapping.SituacaoServidor.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.MatrizCurricular.hbm.xml" LogicalName="ufmt.sig.entity.mapping.MatrizCurricular.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.JornadaTrabalho.hbm.xml" LogicalName="ufmt.sig.entity.mapping.JornadaTrabalho.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.cineclube.Filme.hbm.xml" LogicalName="ufmt.sig.entity.mapping.cineclube.Filme.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Uf.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Uf.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.sisvote.Candidato.hbm.xml" LogicalName="ufmt.sig.entity.mapping.sisvote.Candidato.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.MatrizDisciplinar.hbm.xml" LogicalName="ufmt.sig.entity.mapping.MatrizDisciplinar.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Cargo.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Cargo.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.TipoOcorrenciaServidor.hbm.xml" LogicalName="ufmt.sig.entity.mapping.TipoOcorrenciaServidor.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.TipoEncargoServidor.hbm.xml" LogicalName="ufmt.sig.entity.mapping.TipoEncargoServidor.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.PermissaoUsuario.hbm.xml" LogicalName="ufmt.sig.entity.mapping.PermissaoUsuario.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Afastamento.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Afastamento.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.ResponsavelUnidade.hbm.xml" LogicalName="ufmt.sig.entity.mapping.ResponsavelUnidade.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.InstituicaoConvenio.hbm.xml" LogicalName="ufmt.sig.entity.mapping.InstituicaoConvenio.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.Metrica.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.Metrica.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.ItemToCampos.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.ItemToCampos.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Curso.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Curso.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Aplicacao.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Aplicacao.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.AlocacaoDisciplinar.hbm.xml" LogicalName="ufmt.sig.entity.mapping.AlocacaoDisciplinar.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.cineclube.Agenda.hbm.xml" LogicalName="ufmt.sig.entity.mapping.cineclube.Agenda.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.ConfirmaEmail.hbm.xml" LogicalName="ufmt.sig.entity.mapping.ConfirmaEmail.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.sisvote.Eleicao.hbm.xml" LogicalName="ufmt.sig.entity.mapping.sisvote.Eleicao.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Log.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Log.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Perfil.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Perfil.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncionalToItemToCampos.hbm.xml" LogicalName="ufmt.sig.entity.mapping.progressaofuncional.ProgressaoFuncionalToItemToCampos.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.PlanoPedagogico.hbm.xml" LogicalName="ufmt.sig.entity.mapping.PlanoPedagogico.hbm.xml" />
+    <EmbeddedResource Include="ufmt.sig.entity.mapping.Pessoa.hbm.xml" LogicalName="ufmt.sig.entity.mapping.Pessoa.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NHibernate">
+      <HintPath>../../libs/NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core"></Reference>
+    <Reference Include="System.Xml"></Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ufmt.utils/ufmt.utils.csproj" />
+    <ProjectReference Include="../ufmt.nhibernate/ufmt.nhibernate.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity.progressaofuncional"
+                   assembly="ufmt.sig" auto-import="false">
+
+  <class name="ProgressaoFuncionalToItemToCampos" table="pFuncional.ProgressaoFuncionalToItemToCampos">
+
+
+    <id name="Id">
+      <column name="Id" sql-type="int" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+
+    <many-to-one name="ProgressaoFuncionalToItem" lazy="false"  insert="false"  update="false">
+      <column name="ProgressaoFuncionalToItemId" sql-type="int" not-null="true"/>
+    </many-to-one>
+   
+    <many-to-one name="Campo" lazy="false"  insert="false"  update="false">
+      <column name="CamposId" sql-type="int" not-null="false"/>
+    </many-to-one>
+
+    <property name="ProgressaoFuncionalToItemId" >
+      <column name="ProgressaoFuncionalToItemId" sql-type="int" not-null="true"/>
+    </property>
+    
+    <property name="CamposId" >
+      <column name="CamposId" sql-type="int" not-null="false"/>
+    </property>
+    
+    <property name="Valor">
+      <column name="Valor" sql-type="varchar(max)" not-null="true"/>
+    </property>
+    
+  </class>
+
+</hibernate-mapping>

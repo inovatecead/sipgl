@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ufmt.nhibernate/ufmt.nhibernate.csproj" />
+    <Project Path="src/ufmt.sig/ufmt.sig.csproj" />
+    <Project Path="src/ufmt.sipgl.Business/ufmt.sipgl.Business.csproj" />
+    <Project Path="src/ufmt.sipgl.DataAccess/ufmt.sipgl.DataAccess.csproj" />
+    <Project Path="src/ufmt.sipgl.Web/ufmt.sipgl.Web.csproj" />
+    <Project Path="src/ufmt.utils/ufmt.utils.csproj" />
+  </Folder>
+</Solution>

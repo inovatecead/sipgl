@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="TipoTecnologiaAssistiva" table="TipoTecnologiaAssistiva">
+
+    <id name="TipoTecnologiaAssistivaUID">
+      <column name="tipoTecnologiaAssistivaUID" sql-type="char(3)" not-null="true"/>
+    </id>
+
+    <property name="Descricao">
+      <column name="descricao" sql-type="varchar(70)" not-null="true"/>
+    </property>
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="Log" table="Log">
+
+    <id name="LogUID">
+      <column name="logUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Usuario" lazy="false">
+      <column name="usuarioUID" sql-type="bigint" not-null="false"/>
+    </many-to-one>
+
+    <many-to-one name="Aplicacao" lazy="false">
+      <column name="aplicacaoUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <property name="DataHora">
+      <column name="dataHora" sql-type="datetime" not-null="true"/>
+    </property>
+
+    <property name="Operacao">
+      <column name="operacao" sql-type="varchar(1024)" not-null="true"/>
+    </property>
+
+    <property name="Ip">
+      <column name="ip" sql-type="varchar(30)" not-null="true"/>
+    </property>
+
+    <property name="ValorAntigo">
+      <column name="valorAntigo" sql-type="varchar(1024)" not-null="false"/>
+    </property>
+
+    <property name="ValorNovo">
+      <column name="valorNovo" sql-type="varchar(1024)" not-null="false"/>
+    </property>
+
+    <property name="Detalhes">
+      <column name="detalhes" sql-type="varchar(1024)" not-null="false"/>
+    </property>
+    
+  </class>
+</hibernate-mapping>

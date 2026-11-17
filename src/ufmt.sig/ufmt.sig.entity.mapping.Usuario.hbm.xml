@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="Usuario" table="Usuario">
+
+    <id name="UsuarioUID">
+      <column name="usuarioUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Pessoa" lazy="false">
+      <column name="pessoaUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <property name="NomeAcesso">
+      <column name="nomeAcesso" sql-type="varchar(64)" not-null="true"/>
+    </property>
+
+    <property name="SenhaAcesso">
+      <column name="senhaAcesso" sql-type="varchar(32)" not-null="true"/>
+    </property>
+
+    <property name="Bloqueado">
+      <column name="bloqueado" sql-type="bit" not-null="true"/>
+    </property>
+
+    <property name="DataUltimoAcesso">
+      <column name="dataUltimoAcesso" sql-type="datetime" not-null="false"/>
+    </property>
+
+    <property name="DataProximaTrocaSenha">
+      <column name="dataProximaTrocaSenha" sql-type="datetime" not-null="false"/>
+    </property>
+    
+  </class>
+
+</hibernate-mapping>

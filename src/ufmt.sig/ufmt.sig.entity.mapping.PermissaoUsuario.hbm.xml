@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="PermissaoUsuario" table="PermissaoUsuario">
+
+    <id name="PermissaoUsuarioUID">
+      <column name="permissaoUsuarioUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Usuario" lazy="false">
+      <column name="usuarioUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <many-to-one name="Permissao" lazy="false">
+      <column name="permissaoUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <property name="DataLimite">
+      <column name="dataLimite" sql-type="datetime" not-null="false"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

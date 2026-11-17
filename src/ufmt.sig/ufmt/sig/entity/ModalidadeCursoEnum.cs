@@ -1,0 +1,12 @@
+namespace ufmt.sig.entity;
+
+public enum ModalidadeCursoEnum
+{
+	LICENCIATURA_PLENA = 1,
+	BACHARELADO = 2,
+	ESPECIFICO_REFERENTE_PROFISSAO = 4,
+	ESPECIALIZACAO = 8,
+	MESTRADO = 0x10,
+	DOUTORADO = 0x20,
+	MESTRADO_PROFISSIONAL = 0x40
+}

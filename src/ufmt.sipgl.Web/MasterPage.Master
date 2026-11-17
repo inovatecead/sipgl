@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ufmt.sipgl.View.MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>SIPGL - Sistema de Pós-Graduação Lato Sensu</title>
+    <link rel="Stylesheet" href="~/media/styles/style.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/all.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/brands.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/fontawesome.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/regular.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/solid.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/svg-with-js.css" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <div id="barra-brasil" style="background: #7F7F7F; height: 20px; padding: 0 0 0 10px; display: block;">
+        <ul id="menu-barra-temp" style="list-style: none;">
+            <li style="display: inline; float: left; padding-right: 10px; margin-right: 10px; border-right: 1px solid #EDEDED">
+                <a href="http://brasil.gov.br" style="font-family: sans,sans-serif; text-decoration: none; color: white;">Portal do Governo Brasileiro</a>
+            </li>
+            <li>
+                <a style="font-family: sans,sans-serif; text-decoration: none; color: white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-container">
+        <div class="content-wrap">
+
+            <form id="form1" runat="server">
+                <div id="total">
+                    <asp:ToolkitScriptManager ID="ToolkitScriptManager2" runat="server"></asp:ToolkitScriptManager>
+
+
+
+                    <div id="gradient">
+                        <div id="head-align">
+                            <div id="head1">
+
+                                <div class="ancoras">
+                                    <a href="#contentBox" id="irparaconteudo" class="" title="Ir para o Conteúdo">Ir para o Conteúdo <span>1</span></a>
+                                    <a href="#menu" id="irparamenu" class="" title="Ir para o Menu">Ir para o Menu <span>2</span></a>
+                                    <a href="#buscar-campo" id="irparabusca" class="" title="Ir para a busca">Ir para a busca <span>3</span></a>
+                                    <a href="#rodape" id="irpararodape" class="" title="Ir para o rodapé">Ir para o rodapé <span>4</span></a>
+                                </div>
+
+                                <div id="logo">
+                                    <div class="logomg"></div>
+                                    <div id="logotexto">
+                                        <span>Universidade Federal de Mato Grosso</span>
+                                        <h1>Sistema de Pós-Graduação Lato Sensu</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="subMenuBarra">
+                        <ul>
+                            <li><a href="https://www.ufmt.br"><i class="fas fa-home"></i>&nbsp;Portal da UFMT</a></li>
+                            <li><a href="/ufmt.avaliacaodesempenho/"><i class="fas fa-desktop"></i>&nbsp;Página Inicial</a></li>
+                            <li><a href="https://ufmtonline.ufmt.br/home/details/course-v1:UFMT+CAD01+201X"><i class="fas fa-graduation-cap"></i>&nbsp;Curso SAD Online</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="floatBox">
+                        <div id="contentBox">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <div id="rodape" class="footer-align-login">
+            <div class="footer-animado-login">
+                <img src="media/images/rodape_animado.gif" alt="Imagem animada, viola de coxo e Tuiuiú" />
+            </div>
+
+            <div>
+                Universidade Federal de Mato Grosso - UFMT<br />
+                Secretaria de Tecnologia da Informação - STI<br />
+                Av. Fernando Correa da Costa, nº 2367 - Bairro Boa Esperança. Cuiabá - MT - 78060-900
+            </div>
+
+            <div>Fone: +55 (65) 3615-6283</div>
+
+            <div class="footer-bar">
+                Contato: <a href="mailto:apoio@ufmt.br">apoio@ufmt.br</a>
+            </div>
+        </div>
+    </div>
+
+    <script async src="https://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="Scripts/acessibilidade.js" type="text/javascript"></script>
+    <script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+
+</body>
+</html>

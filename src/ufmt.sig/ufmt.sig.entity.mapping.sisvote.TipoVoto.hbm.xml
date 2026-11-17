@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity.sisvote"
+                   assembly="ufmt.sig" auto-import="false">
+
+  <class name="TipoVoto" table="sisvote.TipoVoto">
+
+    <id name="TipoVotoUID">
+      <column name="tipoVotoUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <property name="Descricao">
+      <column name="descricao" sql-type="varchar(255)" not-null="true"/>
+    </property>
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ufmt.sipgl.DataAccess</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Model.csdl" />
+    <None Remove="Model.msl" />
+    <None Remove="Model.ssdl" />
+    <EmbeddedResource Include="Model.csdl" LogicalName="Model.csdl" />
+    <EmbeddedResource Include="Model.msl" LogicalName="Model.msl" />
+    <EmbeddedResource Include="Model.ssdl" LogicalName="Model.ssdl" />
+    <ApplicationConfig Remove="ufmt.sipgl.DataAccess.dll.config" />
+    <ApplicationConfig Include="ufmt.sipgl.DataAccess.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Core"></Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="EntityFramework">
+      <HintPath>../../libs/EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>../../libs/CsvHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity.sge"
+                   assembly="ufmt.sig">
+
+  <class name="UnidadeAlocadora" table="sge.UnidadeAlocadora">
+    
+    <id name="UnidadeAlocadoraUID">
+      <column name="unidadeAlocadoraUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Unidade" lazy="false">
+      <column name="unidadeUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+    
+  </class>
+  
+</hibernate-mapping>

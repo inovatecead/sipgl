@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity.sisvote"
+                   assembly="ufmt.sig" auto-import="false">
+
+  <class name="Candidato" table="sisvote.Candidato">
+
+    <id name="CandidatoUID">
+      <column name="candidatoUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Cargo" lazy="false">
+      <column name="cargoUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <many-to-one name="Servidor" lazy="false">
+      <column name="servidorUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+namespace ufmt.sig.entity;
+
+public enum TipoFracionamentoDisciplinarEnum
+{
+	NENHUM,
+	FRACIONAMENTO_CARGA_HORARIA,
+	ENCARGO_ORIENTACAO,
+	CRIACAO_SUB_TURMA,
+	DISCIPLINA_CO_MINISTRADA,
+	FRACIONAMENTO_MODIFICADO
+}

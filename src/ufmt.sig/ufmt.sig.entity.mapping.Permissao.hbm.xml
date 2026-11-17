@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="Permissao" table="Permissao">
+
+    <id name="PermissaoUID">
+      <column name="permissaoUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Aplicacao" lazy="false">
+      <column name="aplicacaoUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <property name="Nome">
+      <column name="nome" sql-type="varchar(255)" not-null="true"/>
+    </property>
+
+    <property name="Descricao">
+      <column name="descricao" sql-type="varchar(2048)" not-null="false"/>
+    </property>
+
+    <property name="UrlRelativa">
+      <column name="urlRelativa" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

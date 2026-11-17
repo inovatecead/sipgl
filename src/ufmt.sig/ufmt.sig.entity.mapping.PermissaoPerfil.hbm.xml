@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="PermissaoPerfil" table="PermissaoPerfil">
+
+    <id name="PermissaoPerfilUID">
+      <column name="permissaoPerfilUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Perfil" lazy="false">
+      <column name="perfilUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <many-to-one name="Permissao" lazy="false">
+      <column name="permissaoUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+  </class>
+</hibernate-mapping>

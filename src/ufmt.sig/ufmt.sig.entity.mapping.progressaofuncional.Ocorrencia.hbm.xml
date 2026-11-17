@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity.progressaofuncional"
+                   assembly="ufmt.sig" auto-import="false">
+
+  <class name="Ocorrencia" table="pFuncional.Ocorrencia" >
+    <id name="Id">
+      <column name="ID"  sql-type="int" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+    <property name="Data">
+      <column name="data" sql-type="DateTime" not-null="true"/>
+    </property>
+    <property name="Observacao">
+      <column name="observacao" sql-type="nvarchar(max)" not-null="true"/>
+    </property>    
+    <many-to-one name="ProgressaoFuncional" lazy="false"  insert="false" update="false">
+      <column name="progressaoFuncionalID" sql-type="int" not-null="true"/>
+    </many-to-one>
+    <property name="ProgressaoFuncionalID">
+      <column name="ProgressaoFuncionalID" sql-type="int" not-null="true"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,1 @@
+﻿ALTER TABLE sipgl.ProjetoDisciplina ADD tipoDisciplina int default 1;

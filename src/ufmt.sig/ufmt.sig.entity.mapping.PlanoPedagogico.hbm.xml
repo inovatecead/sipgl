@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="PlanoPedagogico" table="PlanoPedagogico">
+
+    <id name="PlanoPedagogicoUID">
+      <column name="planoPedagogicoUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="MatrizCurricular" lazy="false">
+      <column name="matrizCurricularUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+
+    <property name="NomeArquivo">
+      <column name="nomeArquivo" sql-type="varchar(255)" not-null="true"/>
+    </property>
+
+    <property name="TipoConteudo">
+      <column name="tipoConteudo" sql-type="varchar(40)" not-null="true"/>
+    </property>
+
+    <property name="Arquivo">
+      <column name="arquivo" sql-type="varbinary(MAX)" not-null="true"/>
+    </property>
+
+    <property name="DataModificacao">
+      <column name="dataModificacao" sql-type="date" not-null="true"/>
+    </property>    
+    
+  </class>
+
+</hibernate-mapping>

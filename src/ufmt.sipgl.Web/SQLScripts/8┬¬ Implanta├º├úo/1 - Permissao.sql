@@ -1,0 +1,1 @@
+﻿INSERT INTO dbo.Permissao (aplicacaoUID, nome, descricao) values (19, 'DIRETOR_INSTITUTO_FACULDADE', 'Responsável por cadastrar o curso no sistema');

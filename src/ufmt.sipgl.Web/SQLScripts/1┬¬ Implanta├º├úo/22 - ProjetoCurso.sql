@@ -1,0 +1,1 @@
+﻿ALTER TABLE sipgl.ProjetoCurso ADD descricaoAva varchar(max);

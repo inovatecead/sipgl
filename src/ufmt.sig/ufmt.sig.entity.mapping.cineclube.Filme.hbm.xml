@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity.cineclube"
+                   assembly="ufmt.sig" auto-import="false">
+
+  <class name="Filme" table="cineclube.Filme">
+
+    <id name="FilmeUID">
+      <column name="filmeUID" sql-type="int" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <property name="Titulo">
+      <column name="titulo" sql-type="varchar(400)" not-null="true"/>
+    </property>
+
+    <property name="Direcao">
+      <column name="direcao" sql-type="varchar(400)" not-null="false"/>
+    </property>
+
+    <property name="Producao">
+      <column name="producao" sql-type="varchar(400)" not-null="false"/>
+    </property>
+
+    <property name="InfoFotografia">
+      <column name="infoFotografia" sql-type="varchar(400)" not-null="false"/>
+    </property>
+
+    <property name="InfoMontagem">
+      <column name="infoMontagem" sql-type="varchar(400)" not-null="false"/>
+    </property>
+
+    <property name="Sinopse">
+      <column name="sinopse" sql-type="varchar(4000)" not-null="false"/>
+    </property>
+
+    <property name="Elenco">
+      <column name="elenco" sql-type="varchar(4000)" not-null="false"/>
+    </property>
+
+    <many-to-one name="Genero" lazy="false">
+      <column name="generoUID" sql-type="int" not-null="false"/>
+    </many-to-one>
+
+  </class>
+
+</hibernate-mapping>

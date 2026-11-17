@@ -1,0 +1,1 @@
+﻿INSERT INTO sipgl.ProjetoTipoGraduacao (descricao) values ('Tecnólogo');

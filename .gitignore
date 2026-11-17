@@ -1,0 +1,22 @@
+# Build
+src/**/bin/
+src/**/obj/
+*.user
+*.suo
+.vs/
+.DS_Store
+
+# Backup de deploy original — mantido só como referência local, fora do
+# repositório público.
+/2023-04-24/
+
+# Credenciais locais — nunca commitar valores reais de configuração.
+# Use uma cópia local destes arquivos fora do controle de versão, ou
+# variáveis de ambiente / secret manager do ambiente de deploy.
+Web.config.local
+app.config.local
+*.local.config
+
+# Dados pessoais reais de alunos (nome, CPF, RG, senha em texto puro) —
+# nunca devem entrar no repositório. Ver README > Configuração.
+**/App_Data/*.csv

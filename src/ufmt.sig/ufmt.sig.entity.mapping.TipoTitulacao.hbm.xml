@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="TipoTitulacao" table="TipoTitulacao">
+
+    <id name="TipoTitulacaoUID">
+      <column name="tipoTitulacaoUID" sql-type="int" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <property name="Descricao">
+      <column name="descricao" sql-type="varchar(50)" not-null="true"/>
+    </property>
+
+    <property name="TitulacaoSiape">
+      <column name="titulacaoSiape" sql-type="int" not-null="false"/>
+    </property>
+    
+  </class>
+
+</hibernate-mapping>

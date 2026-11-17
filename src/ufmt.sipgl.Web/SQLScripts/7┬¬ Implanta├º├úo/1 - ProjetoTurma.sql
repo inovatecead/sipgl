@@ -1,0 +1,1 @@
+﻿ALTER TABLE sipgl.ProjetoTurma ADD isAtivo bit not null default 0;

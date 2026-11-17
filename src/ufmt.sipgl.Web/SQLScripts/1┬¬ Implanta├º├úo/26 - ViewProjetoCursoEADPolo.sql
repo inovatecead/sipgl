@@ -1,0 +1,38 @@
+﻿--USE [idbufmt]
+--GO
+
+--/****** Object:  View [Sipgl].[ViewProjetoCursoEADPolo]    Script Date: 07/11/2018 16:23:56 ******/
+--SET ANSI_NULLS ON
+--GO
+
+--SET QUOTED_IDENTIFIER ON
+--GO
+
+--ALTER VIEW [Sipgl].[ViewProjetoCursoEADPolo] AS
+--SELECT 
+--ppc.projetoPoloCursoUID as projetoPoloCursoUID,
+--pc.projetoCursoUID as projetoCursoUID, 
+--pc.codigoProjetoCurso as codigoProjetoCurso, 
+--pc.nomeCurso as nomeCurso,
+--pc.objetivosCurso as objetivosCurso,
+--pc.publicoAlvo as publicoAlvo,
+--pc.cargaHorariaTotal as cargaHorariaTotal,
+--pc.emailCoordenador as emailCoordenador,
+--pc.quantidadeVagas as quantidadeVagas,
+--pc.realizacaoDataInicio as realizacaoDataInicio,
+--pc.realizacaoDataTermino as realizacaoDataTermino,
+--e.enderecoUID as enderecoUID,
+--e.identificacaoEndereco as rua, 
+--m.Nome as municipio,
+--e.CEP as CEP,
+--e.bairroEndereco as bairroEndereco,
+--e.telefone as telefone,
+--e.identificacaoEndereco as identificacaoEndereco
+
+--from sipgl.ProjetoPoloCurso ppc
+--join sipgl.EnderecoPoloApoioPresencialEAD e on e.enderecoUID = ppc.enderecoUID
+--join sipgl.ProjetoCurso pc on pc.projetoCursoUID = ppc.projetoCursoUID
+--join Municipio m on m.MunicipioUID = e.municipioEnderecoUID;
+--GO
+
+

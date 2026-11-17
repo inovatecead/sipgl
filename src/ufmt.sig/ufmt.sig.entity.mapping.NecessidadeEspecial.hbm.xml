@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="NecessidadeEspecial" table="NecessidadeEspecial">
+
+    <id name="NecessidadeEspecialUID">
+      <column name="necessidadeEspecialUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <many-to-one name="Pessoa" lazy="false">
+      <column name="pessoaUID" sql-type="bigint" not-null="true"/>
+    </many-to-one>
+    
+    <many-to-one name="TipoNecessidadeEspecial">
+      <column name="tipoNecessidadeEspecialUID" sql-type="char(3)" not-null="true"/>
+    </many-to-one>
+    
+  </class>
+
+</hibernate-mapping>

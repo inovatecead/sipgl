@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ufmt.sig.entity"
+                   assembly="ufmt.sig">
+
+  <class name="Pessoa" table="Pessoa">
+
+    <id name="PessoaUID">
+      <column name="pessoaUID" sql-type="bigint" not-null="true"/>
+      <generator class="identity"/>
+    </id>
+
+    <property name="Nome">
+      <column name="nome" sql-type="varchar(255)" not-null="true"/>
+    </property>
+
+    <property name="Sexo">
+      <column name="sexo" sql-type="char(1)" not-null="true"/>
+    </property>
+
+    <property name="NascimentoData">
+      <column name="nascimentoData" sql-type="date" not-null="true"/>
+    </property>
+
+    <property name="NomeMae">
+      <column name="nomeMae" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+    <property name="NomePai">
+      <column name="nomePai" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+    <property name="Cpf">
+      <column name="cpf" sql-type="varchar(11)" not-null="true"/>
+    </property>
+
+    <property name="PisPasep">
+      <column name="pisPasep" sql-type="varchar(11)" not-null="false"/>
+    </property>
+   
+    <property name="Ctps">
+      <column name="ctps" sql-type="varchar(30)" not-null="false"/>
+    </property>
+    
+    <property name="CtpsSerie">
+      <column name="ctpsSerie" sql-type="varchar(5)" not-null="false"/>
+    </property>
+    
+    <property name="CtpsUf">
+      <column name="ctpsUf" sql-type="varchar(2)" not-null="false"/>
+    </property>
+    
+    <property name="Rg">
+      <column name="rg" sql-type="varchar(14)" not-null="false"/>
+    </property>
+
+    <property name="RgOrgaoExpedidor">
+      <column name="rgOrgaoExpedidor" sql-type="varchar(5)" not-null="false"/>
+    </property>
+
+    <property name="RgDataExpedicao">
+      <column name="rgDataExpedicao" sql-type="date" not-null="false"/>
+    </property>
+
+    <property name="RgUf">
+      <column name="rgUf" sql-type="varchar(2)" not-null="false"/>
+    </property>
+
+    <property name="TituloEleitor">
+      <column name="tituloEleitor" sql-type="varchar(13)" not-null="false"/>
+    </property>
+
+    <property name="TituloEleitorZona">
+      <column name="tituloEleitorZona" sql-type="varchar(5)" not-null="false"/>
+    </property>
+
+    <property name="TituloEleitorSecao">
+      <column name="tituloEleitorSecao" sql-type="varchar(5)" not-null="false"/>
+    </property>
+
+    <property name="TituloEleitorDataEmissao">
+      <column name="tituloEleitorDataEmissao" sql-type="date" not-null="false"/>
+    </property>
+
+    <property name="TituloEleitorUf">
+      <column name="tituloEleitorUf" sql-type="varchar(2)" not-null="false"/>
+    </property>
+
+    <property name="EnderecoLogradouro">
+      <column name="enderecoLogradouro" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+    <property name="EnderecoNumero">
+      <column name="enderecoNumero" sql-type="varchar(6)" not-null="false"/>
+    </property>
+
+    <property name="EnderecoComplemento">
+      <column name="enderecoComplemento" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+    <property name="EnderecoBairro">
+      <column name="enderecoBairro" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+    <property name="EnderecoMunicipio">
+      <column name="enderecoMunicipio" sql-type="varchar(255)" not-null="false"/>
+    </property>
+
+    <property name="EnderecoUf">
+      <column name="enderecoUf" sql-type="varchar(2)" not-null="false"/>
+    </property>
+
+    <property name="EnderecoCep">
+      <column name="enderecoCep" sql-type="varchar(8)" not-null="false"/>
+    </property>
+
+
+    <property name="TelefonePrimario">
+      <column name="telefonePrimario" sql-type="varchar(13)" not-null="false"/>
+    </property>
+
+    <property name="TelefoneSecundario">
+      <column name="telefoneSecundario" sql-type="varchar(13)" not-null="false"/>
+    </property>
+
+    <property name="TelefoneComercial">
+      <column name="telefoneComercial" sql-type="varchar(13)" not-null="false"/>
+    </property>
+
+    <property name="Mail">
+      <column name="mail" sql-type="varchar(128)" not-null="false"/>
+    </property>
+
+    <many-to-one name="TipoTitulacao" lazy="false">
+      <column name="tipoTitulacaoUID" sql-type="int" not-null="false"/>
+    </many-to-one>
+
+  </class>
+
+</hibernate-mapping>

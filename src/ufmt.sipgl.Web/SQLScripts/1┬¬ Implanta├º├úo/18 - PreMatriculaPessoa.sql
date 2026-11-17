@@ -1,0 +1,3 @@
+﻿--ALTER TABLE sipgl.PreMatriculaPessoa ADD 
+--chaveValidacaoCadastro varchar(256),
+--emailConfirmado bit;

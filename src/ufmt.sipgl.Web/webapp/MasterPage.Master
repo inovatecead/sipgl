@@ -1,0 +1,252 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ufmt.sipgl.View.webapp.bolsa.MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>SIPGL - Sistema de Pós-Graduação Lato Sensu</title>
+    <link rel="Stylesheet" href="~/media/styles/style.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/all.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/brands.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/fontawesome.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/regular.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/solid.css" type="text/css" />
+    <link rel="Stylesheet" href="~/media/fontAwesome/css/svg-with-js.css" type="text/css" />
+    <link href="~/media/styles/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript">
+
+        function func() {
+            document.getElementById("typeMessage").style.display = "none";
+        };
+
+        window.onload = function () {
+            setTimeout(func, 12000);
+        };
+
+    </script>
+
+    <style type="text/css">
+        #easyTooltip {
+            padding: 20px 20px;
+            border: 1px solid #EBEBEB;
+            background-color: #ECECEC;
+            color: #000000;
+        }
+
+        .mestre {
+            text-align: justify;
+        }
+
+        .detalhes {
+            text-align: justify;
+        }
+
+
+        a.mestre:hover {
+            font-weight: bold;
+            font-size: 14px;
+            COLOR: Black;
+            text-decoration: underline;
+        }
+
+        a.mestre:link {
+            color: Black;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        a.mestre:visited {
+            color: Black;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+            <form id="form1" runat="server">
+                <div id="total">
+                     <%--<div>--%>
+
+                    <div id="barra-brasil">
+                        <div id="wrapper-barra-brasil">
+                            <div class="brasil-flag"><a href="https://gov.br" class="link-barra">Brasil</a></div>
+                            <nav>
+                                <ul id="lista-barra-brasil" class="list">
+                                    <li><a href="#" id="menu-icon"></a></li>
+                                    <li class="list-item first"><a href="http://www.saude.gov.br/coronavirus" style="color: red;">CORONAVÍRUS (COVID-19)</a></li>
+                                    <li class="list-item"><a href="http://www.simplifique.gov.br" class="link-barra">Simplifique!</a></li>
+                                    <li class="list-item"><a href="https://www.gov.br/pt-br/participacao-social/" class="link-barra">Participe</a></li>
+                                    <li class="list-item"><a href="http://www.acessoainformacao.gov.br" class="link-barra">Acesso à informação</a></li>
+                                    <li class="list-item"><a href="http://www.planalto.gov.br/legislacao" class="link-barra">Legislação</a></li>
+                                    <li class="list-item last last-item"><a href="https://gov.br/pt-br/canais-do-executivo-federal" class="link-barra">Canais</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <%--</div>--%>
+
+                    <div id="gradient">
+                        <div id="head-align">
+                            <div id="head1">
+                                
+                                <div class="ancoras">
+                                    <a href="#contentBox" id="irparaconteudo" class="" title="Ir para o Conteúdo">Ir para o Conteúdo <span>1</span></a>
+                                    <a href="#stylefour" id="irparamenu" class="" title="Ir para o Menu">Ir para o Menu <span>2</span></a>
+                                    <a href="#buscar-campo" id="irparabusca" class="" title="Ir para a busca">Ir para a busca <span>3</span></a>
+                                    <a href="#rodape" id="irpararodape" class="" title="Ir para o rodapé">Ir para o rodapé <span>4</span></a>
+                                </div>
+
+                                <div id="logo">
+                                    <div class="logomg"></div>
+                                    <div id="logotexto">
+                                        <span>Universidade Federal de Mato Grosso</span>
+                                        <h1>Sistema de Pós-Graduação Lato Sensu</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="subMenuBarra">
+                        <ul>
+                            <li><a href="https://www.ufmt.br"><i class="fas fa-home"></i>&nbsp;Portal da UFMT</a></li>
+                            <li><a href="/ufmt.avaliacaodesempenho/"><i class="fas fa-desktop"></i>&nbsp;Página Inicial</a></li>
+                            <li><a href="https://ufmtonline.ufmt.br/home/details/course-v1:UFMT+CAD01+201X"><i class="fas fa-graduation-cap"></i>&nbsp;Curso SAD Online</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header">
+                        <a href="<%=ResolveUrl("~") %>Relatorios.aspx" title="">
+                            <span class="logadoComo">
+                                <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="true" AsyncPostBackTimeout="300">
+                                </asp:ToolkitScriptManager>
+
+                            </span></a>
+                    </div>
+
+                    <div id="stylefour">
+                        <ul>
+                            <li id="MenuCursos" runat="server" skinid="MenuCursos">
+                                <a href="<%=ResolveUrl("~") %>webapp/projeto/FrmListar.aspx" visible="false" title="" class="menuStyle">
+                                    <asp:Image ID="imgProjeto" runat="server" ImageUrl="~/media/images/btn-generico.png" AlternateText="Cursos" />
+                                    <br />
+                                    <span>Cursos</span>
+                                </a>
+                            </li>
+                            <li id="MenuUnidades" runat="server" skinid="MenuUnidades">
+                                <a href="<%=ResolveUrl("~") %>webapp/enderecoPoloApoioPresencialEAD/FrmListar.aspx" visible="false" title="" class="menuStyle">
+                                    <asp:Image ID="imgPolo" runat="server" ImageUrl="~/media/images/btn-generico.png" AlternateText="Unidades Administrativas/Acadêmicas" />
+                                    <br />
+                                    <span>Unidades</span>
+                                </a>
+                            </li>
+
+                            <li id="MenuDiscentes" runat="server" skinid="MenuDiscentes">
+                                <a href="<%=ResolveUrl("~") %>webapp/matriculaPessoa/FrmListar.aspx" visible="false" title="" class="menuStyle">
+                                    <asp:Image ID="imgInscritos" runat="server" ImageUrl="~/media/images/btn-generico.png" AlternateText="Inscrições" />
+                                    <br />
+                                    <span>Discentes</span>
+                                </a>
+                            </li>
+
+
+                            <li id="MenuDocentes" runat="server" skinid="MenuDocentes">
+                                <a href="<%=ResolveUrl("~") %>webapp/docente/FrmListar.aspx" visible="false" title="" class="menuStyle">
+                                    <asp:Image ID="imgDocentes" runat="server" ImageUrl="~/media/images/btn-generico.png" AlternateText="Docentes" />
+                                    <br />
+                                    <span>Docentes</span>
+                                </a>
+                            </li>
+
+                            <li id="MenuGerenciarUsuarios" runat="server" skinid="MenuGerenciarUsuarios">
+                                <a href="<%=ResolveUrl("~") %>webapp/GerenciarUsuarios/FrmListar.aspx" visible="false" title="" class="menuStyle">
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/media/images/btn-generico.png" AlternateText="Usuarios" />
+                                    <br />
+                                    <span>Gerenciar Usuários</span>
+                                </a>
+                            </li>
+
+                            <li id="MenuPermissoes" runat="server" skinid="MenuPermissoes">
+                                <a href="<%=ResolveUrl("~") %>webapp/permissoes/FrmListar.aspx" visible="false" title="" class="menuStyle">
+                                    <asp:Image ID="imgPermissoes" runat="server" ImageUrl="~/media/images/btn-generico.png" AlternateText="Permissões" />
+                                    <br />
+                                    <span>Permissões</span>
+                                </a>
+                            </li>
+
+                            <!-- Logout -->
+                            <li style="float: right; padding-right: 2%;">
+                                <asp:HyperLink ID="lnkSair" runat="server" CssClass="menuStyle">
+                                    <asp:Image ID="imgSair" runat="server" ImageUrl="~/media/images/logout-generico.png" />
+                                    <br />
+                                    <span>Sair</span>
+                                </asp:HyperLink>
+                            </li>
+                        </ul>
+
+                        <br />
+
+                        <div style="float: left; width: 35%;">
+
+                            <asp:Label ID="logadoComo" runat="server" Text="Usuário: " />
+                            <asp:Label ID="usuarioLogado" runat="server" />
+                        </div>
+
+                        <div style="clear: both"></div>
+                    </div>
+
+                    <asp:Panel ID="typeMessage" runat="server">
+                        <asp:Label ID="textMessage" runat="server"></asp:Label>
+                    </asp:Panel>
+
+                    <div id="floatBox">
+                        <div id="contentBox">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+        <div id="rodape"class="footer-align">
+            <div class="footer-animado">
+                <img src="/media/images/rodape_animado.gif" alt="Imagem animada, viola de coxo e Tuiuiú" />
+            </div>
+
+            <div>
+                Universidade Federal de Mato Grosso - UFMT<br />
+                Secretaria de Tecnologia da Informação - STI<br />
+                Av. Fernando Correa da Costa, nº 2367 - Bairro Boa Esperança. Cuiabá - MT - 78060-900
+            </div>
+
+            <div>Fone: +55 (65) 3615-6283</div>
+
+            <div class="footer-bar">
+                Contato: <a href="mailto:apoio@ufmt.br">apoio@ufmt.br</a>
+            </div>
+        </div>
+    </div>
+
+    <script async src="https://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+	<script src="../Scripts/jquery-1.6.2.min.js" type="text/javascript"></script>
+	<script src="../Scripts/acessibilidade.js" type="text/javascript"></script>
+</body>
+</html>

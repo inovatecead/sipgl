@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ufmt.sipgl.Business</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ExcelDataReader">
+      <HintPath>../../libs/ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data"></Reference>
+    <Reference Include="System.Core"></Reference>
+    <Reference Include="ExcelDataReader.DataSet">
+      <HintPath>../../libs/ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../ufmt.sig/ufmt.sig.csproj" />
+    <ProjectReference Include="../ufmt.sipgl.DataAccess/ufmt.sipgl.DataAccess.csproj" />
+  </ItemGroup>
+</Project>
